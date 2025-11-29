@@ -32,7 +32,7 @@ class Dog:
     ears = 2
 
     # конструктор класса (ф-ция по которой создается объект класса)
-    def __init__(self, name, age, isHungry, breed):
+    def __init__(self, name: str, age: int, isHungry: bool, breed: str):
         #  индивидуальные свойства (могут отличаться у каждого объекта класса)
         self.name = name
         self.age = age
