@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Основы CSS</title>
+
+        <!-- 3. External стиль - подключение внешнего css файла -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- 1. Inline стиль - через атрибут тега -->
+        <p style="color: brown;">Bruh</p>
+
+        <!-- 2. Internal стиль - через тег <style> -->
+        <div></div>
+
+        <style>
+            div {
+                height: 100px;
+                width: 200px;
+                background-color: bisque;
+                border-radius: 20px;
+            }
+        </style>
+
+        <!-- 3. External стиль - через внешний файл -->
+        <!-- селектор по тегу -->
+        <h1>Hello</h1>
+
+        <!-- селектор по классу -->
+        <a class="link" href="">Это ссылка</a> <br>
+
+        <!-- селектор по id -->
+        <p id="text">Lorem ipsum dolor sit amet.</p>
+
+        <!-- группа селекторов -->
+        <ol class="ol">
+            <li>text</li>
+            <li>text</li>
+        </ol>
+
+        <ul class="ul">
+            <li>text</li>
+            <li>text</li>
+        </ul>
+
+        <section class="section">
+            <h1 class="afas">заголовок</h1>
+            <img src="" alt="">
+            <p>описание</p>
+            <p>цена</p>
+        </section>
+        
+    </body>
+</html>

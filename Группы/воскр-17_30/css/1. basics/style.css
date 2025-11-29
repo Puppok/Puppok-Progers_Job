@@ -1,0 +1,35 @@
+/* 1. Селектор по тегу */
+/* h1 {
+    color: red;
+    text-align: center;
+    font-size: 64px;
+} */
+
+/* 2. Селектор по классу */
+.link {
+    color: indigo;
+    text-decoration: none;
+    font-size: 64px;
+}
+
+/* 3. Селектор по id */
+#text {
+    color: green;
+    text-align: center;
+    font-size: 64px;
+}
+
+/* 4. Группа селекторов */
+.ol, .ul {
+    color: red;
+}
+
+/* 5. Комбинированный селектор */
+.section {
+    color: hotpink;
+}
+
+.section > h1 {
+    color: green;
+}
+

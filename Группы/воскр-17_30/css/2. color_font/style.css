@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+
+span {
+    color: red;
+    font-size: 30px;
+}
+
+
+/* Правила цветов */
+/* 
+селектор {
+    1. color: цвет; - стандартный цвет
+    2. color: rgb(красный, зеленый, синий); - цвет в rgb
+        каждый канал - код цвета от 0 до 255
+        rgb(255, 0, 0) - красный
+        rgb(0, 255, 0) - зеленый
+        rgb(0, 0, 255) - синий
+        rgb(255, 255, 255) - белый
+        rgb(0, 0, 0) - черный
+    3. color: rgba(красный, зеленый, синий, прозрачность);
+        параметр прозрачности указывается от 0 до 1
+    4. color: #000000; - цвет в шестнадцатеричном формате (от 0 до f)
+        #ff0000 - красный
+        #00ff00 - зеленый
+        #0000ff - синий
+        #ffffff - белый
+        #000000 - черный
+    5. color: #000; - зеркальная форма записи способа 4
+        color: #0a5; - #0a50a5
+}
+*/
+
+/* Правила заднего фона */
+/* 
+селектор {
+    1. background-color: цвет; - стандартный цвет (любой из 5 способов выше)
+    2. background-image: url(путь); - картинка в качестве заднего фона
+        2.1 background-size: размер; - размер картинки
+        2.2 background-position: позиция; - позиция картинки
+        2.3 background-repeat: повторение; - повторение картинки
+    3. background: linear-gradient(угол, цвет1, цвет2); - градиент
+}
+*/
+
+.bg-color, 
+.bg-image, 
+.bg-gradient {
+    height: 500px;
+    width: 500px;
+    margin: 5px auto;
+}
+
+.bg-color {
+    background-color: blue;
+}
+
+.bg-image {
+    background-image: url('https://avatarko.ru/img/kartinka/1/multfilm_pingviny.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, red, green);
+}
+
+
+/* Шрифты */
+/* 
+селектор {
+    1. font-size: размер; - размер шрифта
+    2. font-family: название; - название шрифта
+    3. font-weight: толщина; - толщина шрифта
+    4. font-style: стиль; - стиль шрифта
+    5. text-align: выравнивание; - выравнивание текста
+    6. text-decoration: подчеркивание; - подчеркивание текста
+    7. line-height: высота строки; - высота строки
+    8. letter-spacing: расстояние; - расстояние между буквами
+}
+*/
+.fonts {
+    font-size: 30px;
+    font-family: "Momo Signature", cursive;
+    font-weight: normal;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: none;
+    line-height: 1.3;
+    letter-spacing: 10px;
+}
+
+/* Единицы измерения */
+/* 
+селектор {
+    Фиксированная
+    1. px - пиксели
+
+    Относительные
+    2. % - проценты
+    3. em - относительно размера шрифта родителя
+    4. rem - относительно размера шрифта корневого элемента
+    5. vh - относительно высоты экрана
+    6. vw - относительно ширины экрана
+}
+*/
+
+body {
+    margin: 0;
+    font-size: 30px;
+}
+
+.test-text {
+    font-size: 16px;
+}
+
+.test-rem {
+    font-size: 2em;
+}
+
+.dim-block {
+   height: 100vw;
+   width: 100vh;
+   background-color: chocolate; 
+}
+

@@ -1,0 +1,54 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* запуск flex отображения */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    
+    /* 
+    flex-direction: направление; - направление элементов
+        flex-direction: row; - строка (по умолчанию)
+        flex-direction: column; - столбик
+        flex-direction: row-reverse; - строка в обратном порядке
+        flex-direction: column-reverse; - столбик в обратном порядке
+    */
+
+    /* 
+    justify-content: расположение; - горизонтальное выравнивание
+        justify-content: center; - по центру
+        justify-content: space-between; - расстояние между
+        justify-content: space-around; - равное расстояние (у краев в 2 раза меньше)
+        justify-content: space-evenly; - равное расстояние между элементами
+        justify-content: flex-start; - размещает на начальной позиции
+        justify-content: flex-end; - размещает на конечной позиции
+    */
+
+    /* 
+    align-items: расположение; - вертикальное расположение
+        align-items: flex-start; - в начальное точке
+        align-items: flex-end; - в конечной точке
+        align-items: center; - по центру
+    */
+}
+
+.block-1, .block-2, .block-3 {
+    height: 100px;
+    width: 100px;
+}
+
+.block-1 {
+    background-color: aqua;
+}
+
+.block-2 {
+    background-color: brown;
+}
+
+.block-3 {
+    background-color: chocolate;
+}

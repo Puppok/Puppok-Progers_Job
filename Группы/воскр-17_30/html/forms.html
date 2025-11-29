@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Формы</title>
+    </head>
+    <body>
+        <!-- Формы -->
+        <form> <!-- Создание формы -->
+            <h1>Форма регистрации</h1>
+            <hr>
+            <label>Ваш логин:</label> <br> <!-- подпись к полю ввода -->
+            <input type="text" placeholder="ваш логин:"> <br><br> <!-- стандартное текстовое поле -->
+
+            <label>Введите почту:</label> <br>
+            <input type="email"> <br><br> <!-- поле email, обязательно наличие @mail... -->
+
+            <label>Ваш логин:</label> <br>
+            <input type="text"> <br><br>
+
+            <label>Ваш логин:</label> <br>
+            <input type="password"> <br><br> <!-- поле ввода пароля (шифрует символы) -->
+
+            <input type="submit"> <br><br> <!-- кнопка подтверждения -->
+
+            <h1>Задачи на день</h1>
+            <hr>
+            <input type="checkbox"> <label>Постараться проснуться</label> <br>
+            <input type="checkbox"> <label>Нажраться как тюлень</label> <br>
+            <input type="checkbox"> <label>Не пойти в школу</label> <br>
+            <input type="checkbox"> <label>Не делать домашку</label> <br>
+            <input type="checkbox"> <label>Получить люлей от мамы</label> <br>
+            <input type="checkbox"> <label>Сделать домашку</label> <br>
+            <input type="checkbox"> <label>Постараться покушать после люлей</label> <br>
+            <input type="checkbox"> <label>Накидаться обезболом в хламину</label> <br>
+            <input type="checkbox"> <label>Завалиться спать</label> <br>
+
+            <h1>Выберите цвет:</h1>
+            <input type="radio" name="color"> <label>Красный</label> <br>
+            <input type="radio" name="color"> <label>Синий</label> <br>
+            <input type="radio" name="color"> <label>Желтый</label> <br>
+            <input type="radio" name="color"> <label>Зеленый</label> <br>
+            
+            <h1>Выберите месяц:</h1>
+            <!-- Выпадающий список -->
+            <select name="" id="">  <!-- select создает сам список -->
+                <option value="">...</option> <!-- option обозначает элемент данного списка -->
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+
+            <!-- текстовые поля -->
+            <textarea placeholder="напишите ваш комментарий..."  cols="50" rows="10"></textarea>
+            <!-- placeholder - подсказка -->
+            <!-- cols - ширина поля -->
+            <!-- rows - высота поля -->
+
+            <!-- группировка полей -->
+            <fieldset> <!-- создает группу -->
+                <legend>Группировка полей</legend> <!-- заголовок для группы -->
+
+                <label for="">ваш логин:</label>
+                <input type="text" placeholder="логин:"> <br><br>
+                <input type="email" placeholder="email:"> <br><br> 
+                <input type="password" placeholder="пароль:"> <br><br>
+
+            </fieldset>
+
+        </form>
+    </body>
+</html>
+
+<!--  -->
