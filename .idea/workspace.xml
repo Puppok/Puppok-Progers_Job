@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/2025-2026.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2025-2026.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="Krasnodar lesson">
+      <change afterPath="$PROJECT_DIR$/Practice/inheritance/Task_Bank_system.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Краснодар/inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Краснодар/inheritance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +62,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Task_Bank_system.executor": "Run",
     "Python.encapsulation.executor": "Run",
     "Python.inheritance.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -125,7 +124,7 @@
       <workItem from="1764556792363" duration="5008000" />
       <workItem from="1764562504374" duration="28000" />
       <workItem from="1764572857744" duration="4722000" />
-      <workItem from="1764579823006" duration="1911000" />
+      <workItem from="1764579823006" duration="6118000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -135,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764394386217</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Krasnodar lesson">
+      <option name="closed" value="true" />
+      <created>1764582056197</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764582056197</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,10 +161,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Krasnodar lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="Krasnodar lesson" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="amount" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/2025_2026$encapsulation.coverage" NAME="encapsulation Coverage Results" MODIFIED="1764469462252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/воскр-8_30/основы" />
     <SUITE FILE_PATH="coverage/inheritance_py$inheritance.coverage" NAME="inheritance Coverage Results" MODIFIED="1764581561795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Краснодар" />
+    <SUITE FILE_PATH="coverage/inheritance_py$Task_Bank_system.coverage" NAME="Task_Bank_system Coverage Results" MODIFIED="1764585935493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/inheritance" />
   </component>
 </project>
