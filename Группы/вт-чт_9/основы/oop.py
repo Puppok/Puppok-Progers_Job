@@ -35,25 +35,38 @@ class House:
 
 
 house = House()
-print(house.free) # так делать можно
-house.free = 'chocolate'
-print(house.free)
+# print(house.free) # так делать можно
+# house.free = 'chocolate'
+# print(house.free)
+#
+# print(house._protect) # не запрещено, но и не стоит делать (тебе втащат)
+# house._protect = 'laptop'
+# print(house._protect)
+#
+# # print(house.__private) - Ошибка!
+# # print(house._House__private) # так делать запрещено
+#
+# # вызов геттера
+# print(house.getPrivate())
+#
+# # вызов сеттера
+# # house.setProtect('chpok') - ошибка, не прошло проверку
+# house.setProtect('piska')
+#
+# # property
+# print('через property: ', house.private) # вызов геттера через property
+# house.private = 'shmak' # вызов сеттера через property
 
-print(house._protect) # не запрещено, но и не стоит делать (тебе втащат)
-house._protect = 'laptop'
-print(house._protect)
+print('jaga%g3235afafa'.isalnum()) # вернет True если строка цифро-буквенная
+# .replace(find, change) # находит и заменяет символ find на символ change
+print('aks_gg_27.1_21kbfe'.replace('_', '').isalnum())
 
-# print(house.__private) - Ошибка!
-# print(house._House__private) # так делать запрещено
 
-# вызов геттера
-print(house.getPrivate()) 
+stroka = 'asghasgsk@ghskgh.sgkhs'
+if '@' in stroka:
+    print('@ есть')
 
-# вызов сеттера
-# house.setProtect('chpok') - ошибка, не прошло проверку
-house.setProtect('piska')
-
-# property
-print('через property: ', house.private) # вызов геттера через property
-house.private = 'shmak' # вызов сеттера через property
-
+if '.' in stroka.split('@')[1]:
+    print(True)
+else:
+    print(False)
