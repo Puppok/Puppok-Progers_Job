@@ -1,12 +1,12 @@
 import pygame
 
-icon = pygame.image.load('icon.png') # подгрузка картинки 32х32
+icon = pygame.image.load('icon.png') # подгрузка картинки 32х32 (для начала ее нужно скачать)
 blue_bg = (0, 0, 255) # синий цвет (для заднего фона)
 
 pygame.init() # инициализация библиотеки
 
-# screen = pygame.display.set_mode((800, 600)) # создание окна
-screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+screen = pygame.display.set_mode((800, 600)) # создание окна определенного размера
+# screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN) - или полноэкранный режим
 pygame.display.set_caption('Писька бобра') # заголовок окна
 pygame.display.set_icon(icon) # задаем иконку окна (слева от заголовка)
 
