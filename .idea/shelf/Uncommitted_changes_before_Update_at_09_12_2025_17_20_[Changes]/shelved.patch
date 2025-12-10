@@ -1,0 +1,247 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1dede9be-c455-4555-8a56-3b3bb40655bf\" name=\"Changes\" comment=\"7.12.2025\">\r\n      <change afterPath=\"$PROJECT_DIR$/Группы/пн-ср_15/pyGame/1_Basics.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Группы/пн-ср_15/pyGame/icon.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/2025-2026.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/2025-2026.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Группы/пн-ср_9/race.blend\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Группы/пн-ср_9/race.blend\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Группы/пн-ср_9/race.blend1\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Группы/пн-ср_9/race.blend1\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\">\r\n    <option name=\"groupingKeys\">\r\n      <option value=\"directory\" />\r\n      <option value=\"repository\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n        <option value=\"HTML File\" />\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Puppok&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Puppok/Puppok-Progers_Job.git&quot;,\r\n    &quot;accountId&quot;: &quot;deca83b0-15b1-43ef-ae01-296e8b9c54ec&quot;\r\n  }\r\n}</component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/Группы/воскр-8_30/основы/encapsulation.py\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"368hg8OV72G6ObgGwbebD329bFg\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"JavaScript Debug.index.html.executor\": \"Run\",\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Node.js.script.js.executor\": \"Run\",\r\n    \"Python.1_Basics.executor\": \"Run\",\r\n    \"Python.base.executor\": \"Run\",\r\n    \"Python.encapsulation.executor\": \"Run\",\r\n    \"Python.oop.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1\": \"true\",\r\n    \"full.screen.before.presentation.mode\": \"false\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"junie.onboarding.icon.badge.shown\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/kravc/OneDrive/Рабочий стол/Программисты будущего/2025-2026/Группы/пн-ср_15/pyGame\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"editor.preferences.fonts.default\",\r\n    \"to.speed.mode.migration.done\": \"true\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\kravc\\OneDrive\\Рабочий стол\\Программисты будущего\\2025-2026\\Группы\\пн-ср_15\\pyGame\" />\r\n      <recent name=\"C:\\Users\\kravc\\OneDrive\\Рабочий стол\\Программисты будущего\\2025-2026\\Краснодар\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\kravc\\OneDrive\\Рабочий стол\\Программисты будущего\\2025-2026\\Practice\\inheritance\" />\r\n      <recent name=\"C:\\Users\\kravc\\OneDrive\\Рабочий стол\\Программисты будущего\\2025-2026\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-PY-252.28238.29\" />\r\n        <option value=\"bundled-python-sdk-a101402ee41c-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28238.29\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1dede9be-c455-4555-8a56-3b3bb40655bf\" name=\"Changes\" comment=\"\" />\r\n      <created>1764394216620</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1764394216620</updated>\r\n      <workItem from=\"1764394218341\" duration=\"1445000\" />\r\n      <workItem from=\"1764408971797\" duration=\"506000\" />\r\n      <workItem from=\"1764409496513\" duration=\"1853000\" />\r\n      <workItem from=\"1764411391836\" duration=\"7504000\" />\r\n      <workItem from=\"1764463399398\" duration=\"8839000\" />\r\n      <workItem from=\"1764472681968\" duration=\"880000\" />\r\n      <workItem from=\"1764475372780\" duration=\"509000\" />\r\n      <workItem from=\"1764480234093\" duration=\"41000\" />\r\n      <workItem from=\"1764480277093\" duration=\"4373000\" />\r\n      <workItem from=\"1764495739585\" duration=\"4672000\" />\r\n      <workItem from=\"1764500571009\" duration=\"5540000\" />\r\n      <workItem from=\"1764556792363\" duration=\"5008000\" />\r\n      <workItem from=\"1764562504374\" duration=\"28000\" />\r\n      <workItem from=\"1764572857744\" duration=\"4848000\" />\r\n      <workItem from=\"1764810927416\" duration=\"6548000\" />\r\n      <workItem from=\"1764818926581\" duration=\"856000\" />\r\n      <workItem from=\"1764832539346\" duration=\"2000\" />\r\n      <workItem from=\"1764833193903\" duration=\"4142000\" />\r\n      <workItem from=\"1764986162492\" duration=\"1449000\" />\r\n      <workItem from=\"1765014600997\" duration=\"4782000\" />\r\n      <workItem from=\"1765067973084\" duration=\"10732000\" />\r\n      <workItem from=\"1765108143856\" duration=\"2816000\" />\r\n      <workItem from=\"1765158193077\" duration=\"4348000\" />\r\n      <workItem from=\"1765177744178\" duration=\"1657000\" />\r\n      <workItem from=\"1765179432895\" duration=\"3073000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"init\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1764394386217</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1764394386217</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"01.12.2025\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1764577804976</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1764577804976</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"4.12.2025\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1764837216412</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1764837216412</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"6.12.2025\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1765024010562</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1765024010562</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"7.12.2025\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1765110864308</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1765110864308</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"init\" />\r\n    <MESSAGE value=\"01.12.2025\" />\r\n    <MESSAGE value=\"4.12.2025\" />\r\n    <MESSAGE value=\"6.12.2025\" />\r\n    <MESSAGE value=\"7.12.2025\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"7.12.2025\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/2025_2026$encapsulation.coverage\" NAME=\"encapsulation Coverage Results\" MODIFIED=\"1764469462252\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Группы/воскр-8_30/основы\" />\r\n    <SUITE FILE_PATH=\"coverage/inheritance_py$base.coverage\" NAME=\"base Coverage Results\" MODIFIED=\"1764837078372\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Группы/вт-чт_15/numPy\" />\r\n    <SUITE FILE_PATH=\"coverage/inheritance_py$encapsulation.coverage\" NAME=\"encapsulation Coverage Results\" MODIFIED=\"1765019684090\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Группы/суб-17_30/Основы\" />\r\n    <SUITE FILE_PATH=\"coverage/inheritance_py$oop.coverage\" NAME=\"oop Coverage Results\" MODIFIED=\"1764814375819\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Группы/вт-чт_9/основы\" />\r\n    <SUITE FILE_PATH=\"coverage/inheritance_py$1_Basics.coverage\" NAME=\"1_Basics Coverage Results\" MODIFIED=\"1765182245179\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Группы/пн-ср_15/pyGame\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bad66e7c66ab35fa5a79dc3b0518d4dbb7461d5f)
++++ b/.idea/workspace.xml	(date 1765190327356)
+@@ -4,14 +4,15 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="7.12.2025">
+-      <change afterPath="$PROJECT_DIR$/Группы/пн-ср_15/pyGame/1_Basics.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Группы/пн-ср_15/pyGame/icon.png" afterDir="false" />
++    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="Practice task inheritance (Bank System)">
++      <change afterPath="$PROJECT_DIR$/Краснодар/numPy/1_basics.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/2025-2026.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2025-2026.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Группы/пн-ср_9/race.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/пн-ср_9/race.blend" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Группы/пн-ср_9/race.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/пн-ср_9/race.blend1" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Краснодар/OOP.py" beforeDir="false" afterPath="$PROJECT_DIR$/Краснодар/Basics/OOP.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Краснодар/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Краснодар/Basics/classes.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Краснодар/decorrators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Краснодар/Basics/decorrators.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Краснодар/inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Краснодар/Basics/inheritance.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -27,9 +28,8 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="CSS File" />
+         <option value="HTML File" />
+-        <option value="JavaScript File" />
++        <option value="CSS File" />
+         <option value="Python Script" />
+       </list>
+     </option>
+@@ -46,7 +46,7 @@
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/Puppok/Puppok-Progers_Job.git&quot;,
+-    &quot;accountId&quot;: &quot;deca83b0-15b1-43ef-ae01-296e8b9c54ec&quot;
++    &quot;accountId&quot;: &quot;061a5a95-064a-42a5-9393-d91501722b67&quot;
+   }
+ }</component>
+   <component name="HighlightingSettingsPerFile">
+@@ -68,11 +68,10 @@
+     "DefaultHtmlFileTemplate": "HTML File",
+     "JavaScript Debug.index.html.executor": "Run",
+     "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "Node.js.script.js.executor": "Run",
+-    "Python.1_Basics.executor": "Run",
+-    "Python.base.executor": "Run",
++    "Python.1_basics.executor": "Run",
++    "Python.Task_Bank_system.executor": "Run",
+     "Python.encapsulation.executor": "Run",
+-    "Python.oop.executor": "Run",
++    "Python.inheritance.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+     "RunOnceActivity.git.unshallow": "true",
+@@ -82,7 +81,7 @@
+     "git-widget-placeholder": "master",
+     "ignore.virus.scanning.warn.message": "true",
+     "junie.onboarding.icon.badge.shown": "true",
+-    "last_opened_file_path": "C:/Users/kravc/OneDrive/Рабочий стол/Программисты будущего/2025-2026/Группы/пн-ср_15/pyGame",
++    "last_opened_file_path": "C:/Users/kravc/OneDrive/Рабочий стол/Программисты будущего/2025-2026",
+     "list.type.of.created.stylesheet": "CSS",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+@@ -96,10 +95,10 @@
+ }]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\kravc\OneDrive\Рабочий стол\Программисты будущего\2025-2026\Группы\пн-ср_15\pyGame" />
+       <recent name="C:\Users\kravc\OneDrive\Рабочий стол\Программисты будущего\2025-2026\Краснодар" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\kravc\Desktop\Progers\Краснодар\Basics" />
+       <recent name="C:\Users\kravc\OneDrive\Рабочий стол\Программисты будущего\2025-2026\Practice\inheritance" />
+       <recent name="C:\Users\kravc\OneDrive\Рабочий стол\Программисты будущего\2025-2026" />
+     </key>
+@@ -132,18 +131,8 @@
+       <workItem from="1764500571009" duration="5540000" />
+       <workItem from="1764556792363" duration="5008000" />
+       <workItem from="1764562504374" duration="28000" />
+-      <workItem from="1764572857744" duration="4848000" />
+-      <workItem from="1764810927416" duration="6548000" />
+-      <workItem from="1764818926581" duration="856000" />
+-      <workItem from="1764832539346" duration="2000" />
+-      <workItem from="1764833193903" duration="4142000" />
+-      <workItem from="1764986162492" duration="1449000" />
+-      <workItem from="1765014600997" duration="4782000" />
+-      <workItem from="1765067973084" duration="10732000" />
+-      <workItem from="1765108143856" duration="2816000" />
+-      <workItem from="1765158193077" duration="4348000" />
+-      <workItem from="1765177744178" duration="1657000" />
+-      <workItem from="1765179432895" duration="3073000" />
++      <workItem from="1764572857744" duration="4722000" />
++      <workItem from="1764579823006" duration="6118000" />
+     </task>
+     <task id="LOCAL-00001" summary="init">
+       <option name="closed" value="true" />
+@@ -153,39 +142,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1764394386217</updated>
+     </task>
+-    <task id="LOCAL-00002" summary="01.12.2025">
++    <task id="LOCAL-00002" summary="Krasnodar lesson">
+       <option name="closed" value="true" />
+-      <created>1764577804976</created>
++      <created>1764582056197</created>
+       <option name="number" value="00002" />
+       <option name="presentableId" value="LOCAL-00002" />
+       <option name="project" value="LOCAL" />
+-      <updated>1764577804976</updated>
+-    </task>
+-    <task id="LOCAL-00003" summary="4.12.2025">
+-      <option name="closed" value="true" />
+-      <created>1764837216412</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1764837216412</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="6.12.2025">
+-      <option name="closed" value="true" />
+-      <created>1765024010562</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1765024010562</updated>
+-    </task>
+-    <task id="LOCAL-00005" summary="7.12.2025">
+-      <option name="closed" value="true" />
+-      <created>1765110864308</created>
+-      <option name="number" value="00005" />
+-      <option name="presentableId" value="LOCAL-00005" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1765110864308</updated>
++      <updated>1764582056197</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -204,17 +169,20 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="init" />
+-    <MESSAGE value="01.12.2025" />
+-    <MESSAGE value="4.12.2025" />
+-    <MESSAGE value="6.12.2025" />
+-    <MESSAGE value="7.12.2025" />
+-    <option name="LAST_COMMIT_MESSAGE" value="7.12.2025" />
++    <MESSAGE value="Krasnodar lesson" />
++    <option name="LAST_COMMIT_MESSAGE" value="Krasnodar lesson" />
++  </component>
++  <component name="XDebuggerManager">
++    <watches-manager>
++      <configuration name="PythonConfigurationType">
++        <watch expression="amount" />
++      </configuration>
++    </watches-manager>
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/2025_2026$encapsulation.coverage" NAME="encapsulation Coverage Results" MODIFIED="1764469462252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/воскр-8_30/основы" />
+-    <SUITE FILE_PATH="coverage/inheritance_py$base.coverage" NAME="base Coverage Results" MODIFIED="1764837078372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_15/numPy" />
+-    <SUITE FILE_PATH="coverage/inheritance_py$encapsulation.coverage" NAME="encapsulation Coverage Results" MODIFIED="1765019684090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/суб-17_30/Основы" />
+-    <SUITE FILE_PATH="coverage/inheritance_py$oop.coverage" NAME="oop Coverage Results" MODIFIED="1764814375819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_9/основы" />
+-    <SUITE FILE_PATH="coverage/inheritance_py$1_Basics.coverage" NAME="1_Basics Coverage Results" MODIFIED="1765182245179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/пн-ср_15/pyGame" />
++    <SUITE FILE_PATH="coverage/inheritance_py$inheritance.coverage" NAME="inheritance Coverage Results" MODIFIED="1764581561795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Краснодар" />
++    <SUITE FILE_PATH="coverage/inheritance_py$Task_Bank_system.coverage" NAME="Task_Bank_system Coverage Results" MODIFIED="1764585935493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/inheritance" />
++    <SUITE FILE_PATH="coverage/inheritance_py$1_basics.coverage" NAME="1_basics Coverage Results" MODIFIED="1765188023933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Краснодар/numPy" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/2025-2026.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"WEB_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.tmp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/temp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/tmp\" />\r\n    </content>\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.13\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/2025-2026.iml b/.idea/2025-2026.iml
+--- a/.idea/2025-2026.iml	(revision bad66e7c66ab35fa5a79dc3b0518d4dbb7461d5f)
++++ b/.idea/2025-2026.iml	(date 1765187021061)
+@@ -6,7 +6,7 @@
+       <excludeFolder url="file://$MODULE_DIR$/temp" />
+       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.14" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Black\">\r\n    <option name=\"sdkName\" value=\"Python 3.13\" />\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.13\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision bad66e7c66ab35fa5a79dc3b0518d4dbb7461d5f)
++++ b/.idea/misc.xml	(date 1765187021065)
+@@ -3,5 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.13" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: Краснодар/numPy/1_basics.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Краснодар/numPy/1_basics.py b/Краснодар/numPy/1_basics.py
+new file mode 100644
+--- /dev/null	(date 1765190310496)
++++ b/Краснодар/numPy/1_basics.py	(date 1765190310496)
+@@ -0,0 +1,3 @@
++import numpy as np
++
++print(np.arange(100))
+\ No newline at end of file
+diff --git a/Краснодар/decorrators.py b/Краснодар/Basics/decorrators.py
+rename from Краснодар/decorrators.py
+rename to Краснодар/Basics/decorrators.py
+diff --git a/Краснодар/classes.py b/Краснодар/Basics/classes.py
+rename from Краснодар/classes.py
+rename to Краснодар/Basics/classes.py
+diff --git a/Краснодар/OOP.py b/Краснодар/Basics/OOP.py
+rename from Краснодар/OOP.py
+rename to Краснодар/Basics/OOP.py
+diff --git a/Краснодар/inheritance.py b/Краснодар/Basics/inheritance.py
+rename from Краснодар/inheritance.py
+rename to Краснодар/Basics/inheritance.py
