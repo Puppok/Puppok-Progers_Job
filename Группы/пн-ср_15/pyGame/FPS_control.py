@@ -57,8 +57,8 @@ while isStarted:
 
     screen.blit(fps_text, [10, 10]) # отрисовка шаблона на экране игры
     screen.blit(frames_text, [10, 40])
-    screen.blit(bg_text, [10, 70])
-    screen.blit(time_text, [10, 90])
+    # screen.blit(bg_text, [10, 70])
+    # screen.blit(time_text, [10, 90])
 
     pg.display.flip()
     clock.tick(60)  # установка раскадровку игры (60 FPS)
