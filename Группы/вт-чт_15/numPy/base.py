@@ -4,20 +4,20 @@ import time
 amount = 100_000_000
 
 # Просчет времени работы через python
-py_list = list(range(amount))
-py_start = time.time()
-py_result = [x * 2 for x in py_list]
-py_time = time.time() - py_start
-print(f'Time python: {py_time:.4f} сек')
+# py_list = list(range(amount))
+# py_start = time.time()
+# py_result = [x * 2 for x in py_list]
+# py_time = time.time() - py_start
+# print(f'Time python: {py_time:.4f} сек')
 
 # Просчет времени работы через numPy
-np_list = np.arange(amount)
-np_start = time.time()
-np_result = np_list * 2
-np_time = time.time() - np_start
-print(f'Time numPy: {np_time:.4f} сек')
+# np_list = np.arange(amount)
+# np_start = time.time()
+# np_result = np_list * 2
+# np_time = time.time() - np_start
+# print(f'Time numPy: {np_time:.4f} сек')
 
-print(f'Dif in {py_time / np_time:.1f} times')
+# print(f'Dif in {py_time / np_time:.1f} times')
 
 # === NumPy ===
 # ndarray - N dimensional array
@@ -132,3 +132,32 @@ print(test.astype(int))
 # 3. Создайте такой же массив с типом uint8 (целые 0-255 для изображений)
 # 4. Сравните использование памяти всех трёх вариантов
 # 5. Вычислите процент экономии при использовании uint8 вместо float64
+
+
+# Создайте следующие массивы используя РАЗНЫЕ методы:
+# 1. Массив из 100 нулей
+# 2. Массив 5×5 заполненный числом 42
+# 3. Единичную матрицу 6×6
+# 4. Массив чисел от 10 до 50 с шагом 5
+# 5. Массив из 20 равномерно распределённых чисел от 0 до 100
+# 6. Массив 3×3 из случайных целых чисел от 1 до 10
+# 7. Массив той же формы что и предыдущий, но из единиц
+# 8. Диагональную матрицу с элементами [1, 2, 3, 4, 5]
+
+
+# Контекст:
+# - У вас есть 32 RGB изображения размером 224×224
+# - Нужно создать батч правильной формы
+# - Нейросеть ожидает float32, нормализованные к [0, 1]
+#
+# Задание:
+# 1. Создайте батч в формате uint8 (как они приходят с камеры)
+# 2. Конвертируйте в float32 и нормализуйте к [0, 1]
+# 3. Посчитайте сколько памяти занимает батч до и после
+# 4. Выведите статистику: min, max, mean для каждого канала
+
+amount_n = 1000
+heigth, width = 256, 256
+channel = 3
+
+test = (np.random.rand(amount_n, heigth, width, channel) * 255).astype(np.uint8)

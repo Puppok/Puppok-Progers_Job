@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="[10.12.2025] - pyGame 15:00 - 16:30">
-      <change afterPath="$PROJECT_DIR$/Группы/вт-чт_10_30/Web/html/media.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/2025-2026.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2025-2026.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_12_2025_17_20__Changes_.xml" beforeDir="false" />
+    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="[11.12.2025] - Web 10:30 - 12:00">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Группы/вт-чт_9/pyGame/2_FPS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/вт-чт_9/pyGame/2_FPS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Группы/пн-ср_15/pyGame/FPS_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/пн-ср_15/pyGame/FPS_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/воскр_11_30/3D/храм.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/воскр_11_30/3D/храм.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/воскр_11_30/3D/храм.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/воскр_11_30/3D/храм.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/вт-чт_15/numPy/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/вт-чт_15/numPy/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/суб-14_30/Mario_emblem.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/суб-14_30/race.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/суб-14_30/race.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/суб-14_30/полигоны.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/суб-14_30/сценки.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/суб_9/warrior.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/суб_9/warrior.blend" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +156,8 @@
       <workItem from="1765257939350" duration="1240000" />
       <workItem from="1765264531610" duration="4921000" />
       <workItem from="1765420829096" duration="4426000" />
+      <workItem from="1765436886348" duration="4069000" />
+      <workItem from="1765610816324" duration="231000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -242,7 +247,31 @@
       <option name="project" value="LOCAL" />
       <updated>1765350374876</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[11.12.2025] - pyGame 9:00 - 10:30">
+      <option name="closed" value="true" />
+      <created>1765437204346</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1765437204347</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[11.12.2025] - refactor">
+      <option name="closed" value="true" />
+      <created>1765437279640</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765437279640</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[11.12.2025] - Web 10:30 - 12:00">
+      <option name="closed" value="true" />
+      <created>1765437298772</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765437298772</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +299,10 @@
     <MESSAGE value="[10.12.2025] - 3D 9:00 - 10:30" />
     <MESSAGE value="[10.12.2025] - Web 10:30 - 12:00" />
     <MESSAGE value="[10.12.2025] - Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="[10.12.2025] - Refactor" />
+    <MESSAGE value="[11.12.2025] - pyGame 9:00 - 10:30" />
+    <MESSAGE value="[11.12.2025] - refactor" />
+    <MESSAGE value="[11.12.2025] - Web 10:30 - 12:00" />
+    <option name="LAST_COMMIT_MESSAGE" value="[11.12.2025] - Web 10:30 - 12:00" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/inheritance_py$FPS_control.coverage" NAME="FPS_control Coverage Results" MODIFIED="1765420041580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/пн-ср_15/pyGame" />
@@ -278,7 +310,7 @@
     <SUITE FILE_PATH="coverage/inheritance_py$1_Base.coverage" NAME="1_Base Coverage Results" MODIFIED="1765248554610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$2_FPS.coverage" NAME="2_FPS Coverage Results" MODIFIED="1765417084322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_9/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$encapsulation.coverage" NAME="encapsulation Coverage Results" MODIFIED="1765019684090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/суб-17_30/Основы" />
-    <SUITE FILE_PATH="coverage/inheritance_py$base.coverage" NAME="base Coverage Results" MODIFIED="1765269260590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_15/numPy" />
+    <SUITE FILE_PATH="coverage/inheritance_py$base.coverage" NAME="base Coverage Results" MODIFIED="1765437825701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_15/numPy" />
     <SUITE FILE_PATH="coverage/inheritance_py$oop.coverage" NAME="oop Coverage Results" MODIFIED="1764814375819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_9/основы" />
     <SUITE FILE_PATH="coverage/inheritance_py$1_Basics.coverage" NAME="1_Basics Coverage Results" MODIFIED="1765246033839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_9/pyGame" />
   </component>
