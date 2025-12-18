@@ -58,6 +58,12 @@ while isGameStarted:
     pg.draw.lines(screen, colors['white'], True, points, 3)
 
     # --- Многоугольник ---
+    # .polygon(surface, color, point_list, line_width)
+    triangle = [(300, 200), (450, 300), (150, 300)]
+    pg.draw.polygon(screen, colors['cyan'], triangle, 4)
+
+    multi_angle = [(559, 271), (479, 195), (412, 298), (462, 223), (382, 181), (173, 372), (184, 52)]
+    pg.draw.polygon(screen, colors['red'], multi_angle, 4)
 
 
     pg.display.flip()
