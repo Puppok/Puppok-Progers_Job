@@ -1,86 +1,103 @@
-import pygame
+import pygame as pg
 
-pygame.init()
-screen = pygame.display.set_mode((800, 600))
-clock = pygame.time.Clock()
-frame = 0
+def draw_traffic_light(surface):
+    colors = {
+        'red': (255, 0, 0),
+        'yellow': (255, 255, 0),
+        'green': (0, 255, 0),
+        'grey': (128, 128, 128),
+        'black': (0, 0, 0),
+    }
 
-RED = (255, 0, 0)
-BLUE = (0, 0, 255)
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GREEN = (0, 255, 0)
+    # box
+    pg.draw.rect(surface, colors['grey'], (100, 60, 200, 450))
+    pg.draw.rect(surface, colors['black'], (100, 60, 200, 450), 5)
 
-colors = [
-    (255, 0, 0),      # Красный
-    (255, 127, 0),    # Оранжевый
-    (255, 255, 0),    # Жёлтый
-    (0, 255, 0),      # Зелёный
-    (3, 194, 252),      # Синий
-    (0, 0, 255),     # Индиго
-    (148, 0, 211)     # Фиолетовый
-]
+    # lights
+    pg.draw.circle(surface, colors['red'], (200, 150), 60)
+    pg.draw.circle(surface, colors['black'], (200, 150), 60, 5)
+
+    pg.draw.circle(surface, colors['yellow'], (200, 290), 60)
+    pg.draw.circle(surface, colors['black'], (200, 290), 60, 5)
+
+    pg.draw.circle(surface, colors['green'], (200, 430), 60)
+    pg.draw.circle(surface, colors['black'], (200, 430), 60, 5)
+
+    # leg
+    pg.draw.rect(surface, colors['grey'], (150, 505, 100, 250))
+    pg.draw.rect(surface, colors['black'], (150, 505, 100, 250), 5)
+
+def draw_home(surface):
+    colors = {
+        'black': (0, 0, 0),
+        'bisque': (240, 230, 175),
+        'brown': (120, 85, 50),
+        'light_blue': (70, 200, 240)
+    }
+
+    # box
+    pg.draw.rect(surface, colors['bisque'], (400, 400, 400, 355))
+    pg.draw.rect(surface, colors['black'], (400, 400, 400, 355), 4)
+
+    # roof
+    pg.draw.polygon(surface, colors['bisque'], [(600, 200), (400, 400), (800, 400)])
+    pg.draw.polygon(surface, colors['black'], [(600, 200), (400, 400), (800, 400)], 4)
+
+    # door
+    pg.draw.rect(surface, colors['brown'], (500, 600, 100, 155))
+    pg.draw.rect(surface, colors['black'], (500, 600, 100, 155), 4)
+
+    # window_1
+    pg.draw.rect(surface, colors['light_blue'], (650, 550, 110, 110))
+    pg.draw.rect(surface, colors['black'], (650, 550, 110, 110), 4)
+    pg.draw.line(surface, colors['black'], (705, 550), (705, 659), 4)
+    pg.draw.line(surface, colors['black'], (650, 605), (759, 605), 4)
+
+    # window_2
+    pg.draw.rect(surface, colors['light_blue'], (450, 450, 110, 110))
+    pg.draw.rect(surface, colors['black'], (450, 450, 110, 110), 4)
+    pg.draw.line(surface, colors['black'], (505, 450), (505, 559), 4)
+    pg.draw.line(surface, colors['black'], (450, 505), (559, 505), 4)
+
+def draw_chessboard(surface):
+    colors = {
+        'black': (0, 0, 0),
+        'white': (255, 255, 255),
+        'grey': (128, 128, 128)
+    }
+    face_size = 68.75
+
+    pg.draw.rect(surface, colors['grey'], (890, 190, 570, 570), 10)
+
+    for y in range(8):
+        for x in range(8):
+            if (x + y) % 2 == 0:
+                pg.draw.rect(surface, colors['white'], (900 + (x * face_size), 200 + (y * face_size), face_size, face_size))
+            else:
+                pg.draw.rect(surface, colors['black'], (900 + (x * face_size), 200 + (y * face_size), face_size, face_size))
+
+pg.init()
+screen = pg.display.set_mode((1500, 800))
+clock = pg.time.Clock()
 
 running = True
 while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
             running = False
 
-    screen.fill((135, 206, 235))
+    screen.fill((65, 178, 209))
 
-    if frame < 10:
-        # === Отрисовка прямоугольника ===
-        # Заполненный прямоугольник
-        # pygame.draw.rect(surface, color, (x, y, width, height))
-        pygame.draw.rect(screen, RED, (10, 10, 50, 80))
-        # Контур прямоугольника (последний параметр - толщина линии)
-        pygame.draw.rect(screen, BLUE, (70, 10, 50, 80), 5)
+    draw_traffic_light(screen)
+    draw_home(screen)
+    draw_chessboard(screen)
 
-        # === Отрисовка круга ===
-        # pygame.draw.circle(surface, color, (center_x, center_y), radius)
-        # Заполненный круг
-        pygame.draw.circle(screen, RED, (170, 50), 40)
-        # Контур круга
-        pygame.draw.circle(screen, BLUE, (260, 50), 40, 3)
-
-        # === Отрисовка линий ===
-        # pygame.draw.line(surface, color, (start_x, start_y), (end_x, end_y), width)
-        # Линия толщиной 1 пиксель
-        pygame.draw.line(screen, RED, (0, 0), (800, 600), 1)
-        # Толстая линия
-        pygame.draw.line(screen, BLUE, (100, 300), (700, 300), 10)
-        # Несколько соединённых линий
-        points = [(100, 100), (200, 50), (300, 100), (400, 50)]
-        pygame.draw.lines(screen, GREEN, False, points, 5)  # False = не замыкать
-
-        # === Многоугольники ===
-        # pygame.draw.polygon(surface, color, points_list)
-        # Треугольник
-        triangle = [(400, 100), (300, 300), (500, 300)]
-        pygame.draw.polygon(screen, RED, triangle)
-        # Пятиугольник
-        pentagon = [(400, 200), (450, 250), (425, 325), (375, 325), (350, 250)]
-        pygame.draw.polygon(screen, BLUE, pentagon, 3)  # 3 = толщина контура
-
-        frame += 1
-
-    center_x, center_t = 400, 600
-    start_radius = 400
-    line_width = 40
-
-    for i, color in enumerate(colors):
-        radius = start_radius - (i * line_width)
-        pygame.draw.circle(screen, color, (center_x, center_t), radius, line_width)
-
-    pygame.display.flip()
+    pg.display.flip()
     clock.tick(60)
 
-pygame.quit()
+pg.quit()
 
-
-# 📝 Задачи для практики
-# Задача 1: Нарисуй светофор (три круга: красный, жёлтый, зелёный)
+# Задача 1: Нарисуй светофор (три круга: красный, жёлтый, зелёный, черная обводка и серый корпус)
 # Задача 2: Нарисуй домик (квадрат + треугольник крыша + прямоугольник дверь + квадраты окна)
 # Задача 3: Создай шахматную доску 8x8 (чередование чёрных и белых квадратов)
 # Задача 4: Нарисуй смайлик (жёлтый круг, два глаза, улыбка)
