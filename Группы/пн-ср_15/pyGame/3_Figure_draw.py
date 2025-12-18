@@ -62,10 +62,37 @@ while gameStarted:
     # контур из линий - .lines(surface, color, closed, point_list, width)
     pg.draw.lines(screen, colors['blue'], False, points, 8)
 
-
     # Многоугольники
+    # треугольник
+    # .polygon(surface, color, point_list, line_width)
+    triangle = [(300, 300), (450, 450), (150, 450)]
+    pg.draw.polygon(screen, colors['green'], triangle, 4)
+
+    # произвольная фигура
+    polygon = [(100, 100), (200, 200), (351, 475), (124, 423), (763, 325), (750, 153)]
+    pg.draw.polygon(screen, colors['purple'], polygon, 4)
 
     # Пример: Радуга
+    rainbow_colors = { # заготовка цветов
+        'red': (250, 0, 0),
+        'orange': (255, 123, 0),
+        'yellow': (255, 255, 0),
+        'green': (0, 255, 0),
+        'light_blue': (46, 199, 255),
+        'blue': (0, 0, 255),
+        'purple': (170, 0, 222),
+    }
+
+    center_x, center_y = 400, 600 # координаты центра окружности
+    start_radius = 400 # стартовый радиус для первого круга
+    line_width = 40 # толщина линии круга
+
+    for i, color in enumerate(rainbow_colors.values()):
+        radius = start_radius - (i * line_width) # радиус рисуемого круга
+        pg.draw.circle(screen, color, (center_x, center_y), radius, line_width)
+
+
+
 
     pg.display.flip()
     clock.tick(60)
