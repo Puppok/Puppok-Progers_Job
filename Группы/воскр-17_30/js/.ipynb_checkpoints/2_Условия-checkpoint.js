@@ -6,46 +6,46 @@
 //      действие, если условие true
 // }
 
-// let num1 = 12
-// let num2 = 20
-//
-// if(num1 < num2) {
-//     console.log('Четко')
-// }
-// else {
-//     console.log('Не четко')
-// }
+let num1 = 12
+let num2 = 20
+
+if(num1 < num2) {
+    console.log('Четко')
+}
+else {
+    console.log('Не четко')
+}
 
 // else if, множественное условие
-// if(num1 > num2) {
-//     console.log('Четко')
-// }
-// else if(num1 < num2) {
-//     console.log('Не очень четко')
-// }
-// else {
-//     console.log('Очко')
-// }
+if(num1 > num2) {
+    console.log('Четко')
+}
+else if(num1 < num2) {
+    console.log('Не очень четко')
+}
+else {
+    console.log('Очко')
+}
 
 // Оператор выбора (switch)
-// let choice = 'kagjhsdga'
-//
-// switch(choice) {
-//     case 'чпок':
-//         console.log('получился чпок')
-//         break
-//     case 'чо каво':
-//         console.log('свари супчик')
-//         break
-//     default:
-//         console.log('пора спать')
-//         break
-// }
+let choice = 'kagjhsdga'
+
+switch(choice) {
+    case 'чпок':
+        console.log('получился чпок')
+        break
+    case 'чо каво':
+        console.log('свари супчик')
+        break
+    default:
+        console.log('пора спать')
+        break
+}
 
 // Тернарный оператор
 // переменная = условие ? если true : если false
 let result = 10 > 12 ? 'да' : 'нет'
-// console.log(result)
+console.log(result)
 
 
 // Логические операторы
@@ -99,35 +99,6 @@ let result = 10 > 12 ? 'да' : 'нет'
 // В месяцах 4, 6, 9, 11 — по 30 дней
 // В остальных месяцах — по 31 дню
 // Год високосный, если делится на 4, но не на 100, или делится на 400
-
-let day = 29
-let month = 2
-let year = 2024
-let isValidDate
-
-let leapYear = ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0)
-
-if (month !== 2) {
-    if (month > 0 && month < 13) {
-        switch (month) {
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                isValidDate = day < 31
-                break
-            default:
-                isValidDate = day < 32
-                break
-        }
-    }
-}
-else {
-    isValidDate = leapYear ? day < 30 : day < 29
-}
-
-console.log(isValidDate)
-
 
 // 5.
 // Система скидок интернет-магазина
