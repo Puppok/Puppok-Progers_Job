@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="[18.12.2025] Python (numPy) 15:00-16:30">
-      <change afterPath="$PROJECT_DIR$/Группы/суб-14_30/Web/html/base-tags.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Группы/суб-14_30/Web/html/basics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Группы/суб-14_30/Web/html/lists.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Группы/суб-17_30/numPy/1_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Группы/суб-17_30/pyGame/3_figures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2025_15_04_[Changes]/race.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2025_15_04_[Changes]/race.blend1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2025_15_04_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2025_15_04_[Changes]/храм.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2025_15_04__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2025_17_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2025_17_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_12_2025_9_15_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_12_2025_9_15__Changes_.xml" beforeDir="false" />
+    <list default="true" id="1dede9be-c455-4555-8a56-3b3bb40655bf" name="Changes" comment="[20.12.2025] Python (pyGame + numPy) 17:30-20:30">
+      <change afterPath="$PROJECT_DIR$/Practice/Web/task_media.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Группы/воскр-17_30/js/2_циклы.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Группы/воскр-8_30/pyGame/3_figures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Группы/воскр_11_30/Web/HTML/2. медиа.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Группы/суб_9/warrior.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/суб_9/warrior.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Группы/суб_9/warrior.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/суб_9/warrior.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/воскр-14_30/3D/warrior.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/воскр-14_30/3D/warrior.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/воскр-14_30/3D/warrior.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/воскр-14_30/3D/warrior.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Группы/воскр-17_30/js/2_Условия.js" beforeDir="false" afterPath="$PROJECT_DIR$/Группы/воскр-17_30/js/2_Условия.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +29,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -78,6 +69,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.2_Условия.js.executor": "Run",
+    "Node.js.2_циклы.js.executor": "Run",
     "Node.js.script.js.executor": "Run",
     "Python.1. Basics.executor": "Run",
     "Python.1_Base.executor": "Run",
@@ -135,8 +128,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-PY-252.28238.29" />
-        <option value="bundled-python-sdk-a101402ee41c-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28238.29" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
       </set>
     </attachedChunks>
   </component>
@@ -191,7 +183,10 @@
       <workItem from="1766020297366" duration="8470000" />
       <workItem from="1766042176288" duration="4573000" />
       <workItem from="1766212387476" duration="7751000" />
-      <workItem from="1766223552154" duration="10127000" />
+      <workItem from="1766223552154" duration="10351000" />
+      <workItem from="1766277834123" duration="6616000" />
+      <workItem from="1766288449321" duration="7997000" />
+      <workItem from="1766309604884" duration="7337000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -449,7 +444,39 @@
       <option name="project" value="LOCAL" />
       <updated>1766046773093</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="[20.12.2025] .gitignore">
+      <option name="closed" value="true" />
+      <created>1766234099208</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1766234099208</updated>
+    </task>
+    <task id="LOCAL-00034" summary="[20.12.2025] 3D 9:00-12:00">
+      <option name="closed" value="true" />
+      <created>1766234124406</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1766234124406</updated>
+    </task>
+    <task id="LOCAL-00035" summary="[20.12.2025] Web 14:30-17:30">
+      <option name="closed" value="true" />
+      <created>1766234140606</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1766234140606</updated>
+    </task>
+    <task id="LOCAL-00036" summary="[20.12.2025] Python (pyGame + numPy) 17:30-20:30">
+      <option name="closed" value="true" />
+      <created>1766234162499</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1766234162499</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,10 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="8.12.2025" />
-    <MESSAGE value="[9.12.2025] - группа 9:00-10:30" />
-    <MESSAGE value="[10.12.2025] - 3D 9:00 - 10:30" />
-    <MESSAGE value="[10.12.2025] - Web 10:30 - 12:00" />
     <MESSAGE value="[10.12.2025] - Refactor" />
     <MESSAGE value="[11.12.2025] - pyGame 9:00 - 10:30" />
     <MESSAGE value="[11.12.2025] - refactor" />
@@ -492,19 +515,23 @@
     <MESSAGE value="[17.12.2025] Python (pyGame) 15:00-16:30" />
     <MESSAGE value="[18.12.2025] Python (pyGame) 9:00-10:30" />
     <MESSAGE value="[18.12.2025] Python (numPy) 15:00-16:30" />
-    <option name="LAST_COMMIT_MESSAGE" value="[18.12.2025] Python (numPy) 15:00-16:30" />
+    <MESSAGE value="[20.12.2025] .gitignore" />
+    <MESSAGE value="[20.12.2025] 3D 9:00-12:00" />
+    <MESSAGE value="[20.12.2025] Web 14:30-17:30" />
+    <MESSAGE value="[20.12.2025] Python (pyGame + numPy) 17:30-20:30" />
+    <option name="LAST_COMMIT_MESSAGE" value="[20.12.2025] Python (pyGame + numPy) 17:30-20:30" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/inheritance_py$2_fps.coverage" NAME="2_fps Coverage Results" MODIFIED="1765629088708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/суб-17_30/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$2_indices_masks.coverage" NAME="2_indices_masks Coverage Results" MODIFIED="1765873178358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_15/numPy" />
-    <SUITE FILE_PATH="coverage/inheritance_py$3_figures.coverage" NAME="3_figures Coverage Results" MODIFIED="1766228990499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/суб-17_30/pyGame" />
+    <SUITE FILE_PATH="coverage/inheritance_py$3_figures.coverage" NAME="3_figures Coverage Results" MODIFIED="1766282155869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/воскр-8_30/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$1__Basics.coverage" NAME="1. Basics Coverage Results" MODIFIED="1765678801122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/воскр-8_30/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$slices.coverage" NAME="slices Coverage Results" MODIFIED="1766046691749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_15/numPy/tasks" />
     <SUITE FILE_PATH="coverage/inheritance_py$2__FPS.coverage" NAME="2. FPS Coverage Results" MODIFIED="1765681000545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/воскр-8_30/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$base.coverage" NAME="base Coverage Results" MODIFIED="1765628386779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_15/numPy" />
     <SUITE FILE_PATH="coverage/inheritance_py$3_Figures.coverage" NAME="3_Figures Coverage Results" MODIFIED="1766022257945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/вт-чт_9/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$3_Figure_draw.coverage" NAME="3_Figure_draw Coverage Results" MODIFIED="1766046002603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/пн-ср_15/pyGame" />
-    <SUITE FILE_PATH="coverage/inheritance_py$figures.coverage" NAME="figures Coverage Results" MODIFIED="1766229618454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/pyGame" />
+    <SUITE FILE_PATH="coverage/inheritance_py$figures.coverage" NAME="figures Coverage Results" MODIFIED="1766282335272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/pyGame" />
     <SUITE FILE_PATH="coverage/inheritance_py$FPS_control.coverage" NAME="FPS_control Coverage Results" MODIFIED="1765782992750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/пн-ср_15/pyGame" />
     <SUITE FILE_PATH="coverage/2025_2026$encapsulation.coverage" NAME="encapsulation Coverage Results" MODIFIED="1764469462252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/воскр-8_30/основы" />
     <SUITE FILE_PATH="coverage/inheritance_py$basics.coverage" NAME="basics Coverage Results" MODIFIED="1765623787302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Группы/суб-17_30/pyGame" />
