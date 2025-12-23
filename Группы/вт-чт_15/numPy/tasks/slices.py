@@ -78,5 +78,22 @@ print(f'Top 10% salaries:\n {top_salaries[-100:]}')
 #    - Установить максимальную зарплату 180,000 (клиппинг сверху)
 #    - Найти "недооценённых" (зарплата < медианной, но опыт > медианного)
 
-fossil = exp >= 15
-print(exp[fossil])
+salaries_mod = salaries.copy()
+
+dino_mask = exp > 15
+old_salary = salaries_mod[dino_mask]
+print(f'old salary:\n {old_salary.mean():.0f}')
+new_salary = old_salary * 1.1
+print(f'new salary:\n {new_salary.mean():.0f}')
+print(f'Delta: +{(new_salary.mean() / old_salary.mean() - 1) * 100:.0f}%')
+
+max_salary = 180_000
+above = salaries > max_salary
+print(f'Less than max: {len(salaries[~above])}')
+print(f'Greater than max: {len(salaries[above])}')
+
+median_salary = np.median(salaries)
+median_exp = np.median(exp)
+dodiki = (salaries < median_salary) & (exp > median_exp)
+print(f'Dodiki: {dodiki.sum()}')
+
