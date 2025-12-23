@@ -132,19 +132,8 @@ print(f'Percent mask: {percent_mask}')
 salaries_sort = np.sort(salaries)
 print(f'Top 10% salaries:\n {salaries_sort[-100:]}')
 
+
 # 3. Операции с масками:
 #    - Повысить зарплату на 10% сотрудникам с опытом > 15 лет
 #    - Установить максимальную зарплату 180,000 (клиппинг сверху)
 #    - Найти "недооценённых" (зарплата < медианной, но опыт > медианного)
-salary_mod = salaries.copy().astype(np.float64)
-
-exp_mask = exp > 15
-count_exp_15 = exp_mask.sum() # кол-во сотрудников с опытом > 15 лет
-avg_exp_15 = salary_mod[exp_mask].mean() # текущая средняя зп
-salary_mod[exp_mask] *= 1.1 # повышение зп на 10%
-avg_new = salary_mod[exp_mask].mean() # новая средняя зп
-
-print(f'Employees: {count_exp_15}\n' 
-      f'Old average: {avg_exp_15:.0f}\n'
-      f'New average: {avg_new:.0f}\n'
-      f'Income: +{(avg_new / avg_exp_15 - 1) * 100:.1f}%')
