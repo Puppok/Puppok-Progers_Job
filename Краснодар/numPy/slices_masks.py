@@ -148,3 +148,27 @@ print(f'Employees: {count_exp_15}\n'
       f'Old average: {avg_exp_15:.0f}\n'
       f'New average: {avg_new:.0f}\n'
       f'Income: +{(avg_new / avg_exp_15 - 1) * 100:.1f}%')
+
+max_salary = 180_000
+mask_above = salary_mod > max_salary
+count_clipped = mask_above.sum()
+salary_mod[mask_above] = max_salary
+
+print(f'Max salary: {max_salary:.0f}\n'
+      f'Employees clipped: {count_clipped:.0f}\n')
+
+median_salary = np.median(salaries)
+median_exp = np.median(exp)
+mask_dodiki = (salaries < median_salary) & (exp > median_exp)
+print(f'Dodiki: {mask_dodiki.sum()}')
+
+rates= np.array([
+    [85, 90, 78],
+    [92, 88, 95],
+    [78, 85, 82],
+    [95, 92, 90],
+    [70, 75, 80]
+])
+
+for i, subject in enumerate(rates):
+    print(f'{i + 1}. {subject.mean():.1f}')
