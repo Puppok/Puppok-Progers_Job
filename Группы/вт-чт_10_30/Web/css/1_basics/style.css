@@ -1,0 +1,35 @@
+/* Селекторы html */
+/* 1. селектор тега */
+button {
+    color: red;
+}
+
+/* 2. селектор класса */
+.ochko {
+    color: chartreuse;
+}
+
+.body {
+    background-color: bisque;
+}
+
+/* 3. селектор id */
+#table {
+    background-color: yellow;
+}
+
+/* комбинирование селекторов */
+div,
+section,
+header,
+main {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+/* вложенные селекторы */
+header h6 {
+    color: green;
+}
