@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Формы</title>
+    </head>
+    <body>
+        <!-- блок формы -->
+        <form>
+            <!-- стандартные поля формы -->
+            <input placeholder="ваш логин:" type="text"> <br> <!-- текстовое поле -->
+            <input type="password"> <br> <!-- поле пароля -->
+            <input type="color"> <br> <!-- выбор цвета -->
+            <input type="date"> <br> <!-- выбор даты -->
+            <input type="file"> <br> <!-- загрузить файл -->
+            <input type="reset"> <!-- кнопка сброса -->
+            <input type="submit"> <!-- кнопка подтверждения -->
+
+            <!-- радио кнопки -->
+            <h3 style="margin: 5px;">Выберите цвет</h3>
+            <label> <input type="radio"> Зеленый </label> <br>
+            <label> <input type="radio"> Желтый</label> <br>
+            <label> <input type="radio"> Красный</label> <br>
+            <label> <input type="radio"> Синий</label> <br>
+            <label> <input type="radio"> Белый</label> <br>
+            <label> <input type="radio"> Черный</label> <br>
+
+            <!-- чекбоксы -->
+            <h3 style="margin: 5px;">Выберите хобби</h3>
+            <label> <input type="checkbox"> Спать</label> <br>
+            <label> <input type="checkbox"> Гулять</label> <br>
+            <label> <input type="checkbox"> Играть в комп</label> <br>
+            <label> <input type="checkbox"> Вышивать</label> <br>
+            <label> <input type="checkbox"> Футбол</label> <br>
+            <label> <input type="checkbox"> Боевые</label> <br>
+
+            <!-- выпадающий список -->
+            <select>
+                <option>...</option> <!-- элемент списка -->
+                <option>А</option>
+                <option>Б</option>
+                <option>В</option>
+                <option>Г</option>
+                <option>Д</option>
+                <option>Хыыыыыы</option>
+            </select> <br>
+
+            <!-- текстовое поле -->
+            <!-- размеры можно менять через высоту и ширину атрибута style -->
+            <!-- placeholder для текстовой вставки -->
+            <textarea placeholder="напишите комментарий..."></textarea>
+
+            <!-- группировка полей -->
+            <fieldset>
+                <legend>Группа полей</legend> <!-- наименование группы -->
+                <input placeholder="логин:" type="text"> <br>
+                <input placeholder="пароль:" type="password"> <br>
+                <input placeholder="email" type="email"> <br>
+                <input type="date"> <br>
+                <input type="range"> <br>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+<!--  -->
