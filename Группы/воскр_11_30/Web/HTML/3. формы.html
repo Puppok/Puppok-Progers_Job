@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Формы</title>
+    </head>
+    <body>
+        <!-- блок формы -->
+        <form>
+            <!-- Хороший пример записи -->
+            <label for="" >
+                Username:
+                <input type="text">
+            </label> <br>
+
+            <!-- Не очень хороший пример, но не ошибка -->
+            <label for="">Password:</label>
+            <input type="text">
+
+            <input type="password"> <br> <!-- пароль (скрывает символы) -->
+            <input type="email"> <br> <!-- email (проверка корректной почты) -->
+            <input type="date"> <br> <!-- выбор даты -->
+
+            <!-- Чекбоксы и радио -->
+            <h3>Выберите цвет</h3>
+            <label><input type="radio"></label>Желтый <br>
+            <label><input type="radio"></label>Зеленый <br>
+            <label><input type="radio"></label>Красный <br>
+            <label><input type="radio"></label>Розовый <br>
+
+            <h3>Выберите ваши увлечения</h3>
+            <label><input type="checkbox">Гулять</label> <br>
+            <label><input type="checkbox">Спать</label> <br>
+            <label><input type="checkbox">Тупить</label> <br>
+            <label><input type="checkbox">Быть Лешей</label> <br>
+            <label><input type="checkbox">Степа Говно</label> <br>
+
+            <!-- Выпадающий список -->
+            <h3>Выберите страну</h3>
+            <select>
+                <option>...</option>
+                <option>Америка</option>
+                <option>Россия</option>
+                <option>Мексика</option>
+                <option>Япония</option>
+                <option>Австралия</option>
+            </select> <br>
+
+            <!-- Текстовое поле -->
+            <!-- placeholder - текстовая вставка -->
+            <textarea cols="30" rows="10" placeholder="Леша говно"></textarea>
+
+            <!-- Группировка полей формы -->
+            <fieldset>
+                <!-- legend - наименование группы -->
+                <legend>Группа полей</legend>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+            </fieldset>
+        </form>
+    
+        
+    </body>
+</html>
+
+<!--  -->

@@ -1,6 +1,6 @@
 import pygame
 
-icon = pygame.image.load('icon.png') # подгрузка картинки 32х32 (для начала ее нужно скачать)
+icon = pygame.image.load('assets/icon.png') # подгрузка картинки 32х32 (для начала ее нужно скачать)
 blue_bg = (0, 0, 255) # синий цвет (для заднего фона)
 
 pygame.init() # инициализация библиотеки
