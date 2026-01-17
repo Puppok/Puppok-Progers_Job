@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Формы</title>
+    </head>
+    <body>
+        <!-- HTML формы -->
+
+        <!-- блок формы -->
+        <form>
+            <!-- 1. Поле для ввода -->
+            <!-- type - определяет тип значения для данного поля -->
+
+            <!-- Текстовые поля -->
+            <label> <!-- текстовая пометка пользователю, что вводить в поле -->
+                <!-- правильный вид записи -->
+                Ваш логин:
+                <input type="text"> <!-- любой текст --> <br>
+            </label>
+
+            <!-- тоже правильный, но более душный для работы с JavaScript -->
+            <label>Пароль:</label> <input type="password"> <!-- поле пароля (точки) --> <br>
+            <input type="email"> <!-- ввод email --> <br>
+            <input type="number"> <!-- выбор числа --> <br>
+            <input type="tel"> <!-- ввод телефона --> <br>
+            <input type="url"> <!-- ссылка --> <br>
+
+            <!-- Выбор и загрузка -->
+            <input type="file"> <!-- загрузка файла --> <br>
+            <input type="color"> <!-- выбор цвета --> <br>
+            <input type="range"> <!-- бегунок регулятор --> <br>
+
+            <!-- Кнопки -->
+            <input type="button" value="Кнопочка хыыы"> <!-- произвольная кнопка --> <br>
+            <input type="submit"> <!-- кнопка подтверждения --> <br>
+            <input type="reset"> <!-- кнопка сброса --> <br>
+
+            <!-- Дата и время -->
+            <input type="date"> <!-- выбор даты --> <br>
+            <input type="week"> <!-- выбор недели --> <br>
+            <input type="time"> <!-- выбор времени --> <br>
+
+            <!-- 2. Чекбоксы и радиокнопки -->
+            <h2>Выберите цвет (1 штука)</h2>
+            <input type="radio"> <label>Коричневый</label> <br>
+            <input type="radio"> <label>Зеленый</label> <br>
+            <input type="radio"> <label>Белый</label> <br>
+            <input type="radio"> <label>Красный</label> <br>
+            <input type="radio"> <label>Фуксия</label> <br>
+            <input type="radio"> <label>Лаймовый</label> <br>
+            <input type="radio"> <label>Розовый</label> <br>
+
+            <h2>Выберите ваше хобби (несколько)</h2>
+            <input type="checkbox"> <label>Гулять</label> <br>
+            <input type="checkbox"> <label>Срать</label> <br>
+            <input type="checkbox"> <label>Ссать</label> <br>
+            <input type="checkbox"> <label>Блевать</label> <br>
+            <input type="checkbox"> <label>Нюхать пятки</label> <br>
+            <input type="checkbox"> <label>Жрать землю</label> <br>
+            <input type="checkbox"> <label>Пердеть с подливой</label> <br>
+
+            <!-- 3. Выпадающий список -->
+            <h4>Выберите страну:</h4>
+            <select> <!-- создание списка -->
+                <option>...</option>
+                <option>Америка</option>
+                <option>ОАЭ</option>
+                <option>Англия</option>
+                <option>Австралия</option>
+                <option>Ирак</option>
+            </select>
+
+            <!-- 4. Текстовое поле -->
+            <p>Текстовое поле:</p> <br>
+            <textarea placeholder="укажите ваш комментарий:" cols="30" rows="10"></textarea>
+            <!-- placeholder - текстовая вставка в поле -->
+
+            <!-- 5. Группировка полей -->
+            <fieldset> <!-- группирующая рамка -->
+                <legend>Первичная информация</legend> <!-- заголовок группы -->
+                <input placeholder="Логин:" type="text"> <br>
+                <input placeholder="Пароль:" type="password"> <br>
+                <input placeholder="Почта:" type="email"> <br>
+            </fieldset>
+        </form>
+
+
+    </body>
+</html>
+
+<!--  -->
