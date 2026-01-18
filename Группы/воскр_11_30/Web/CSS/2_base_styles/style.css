@@ -1,0 +1,42 @@
+/* 1. Правила цвета текста */
+/*
+    color: red;                  # явное название цвета
+    color: rgb(123, 75, 9)       # rgb(Red, Green, Blue), от 0 до 255
+    color: rgba(54, 37, 209, .7) # rgba(Red, Green, Blue, Alfa), Alfa - прозрачность (от 0 до 1)
+    color: #ffb3a8               # #RRGGBB - шестнадцатеричная запись цвета
+    color: #b3a                  # сокращенная запись #bb33aa
+
+    color: hsl(12, 57, 10)       # hsl(hue, saturation, lightness) - фаза, контраст, яркость
+*/
+
+/* 2. Правила фона */
+/*
+    background-color: pink;         # явное указание цвета заднего фона
+    background: linear-gradient();  # задний фон в виде градиента (лучше использовать генератор)
+    background-image: url('путь');  # задний фон в виде картинки
+    background-size: cover;         # размер картинки
+    background-repeat: no-repeat;   # повторения картинки
+    background-position: center;    # позиция картинки
+*/
+
+.color,
+.gradient,
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+.color { /* явный цвет */
+    background-color: #fef8b0;
+}
+
+.gradient { /* градиент */
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+/*  */
+
+
+/* 3. Правила шрифтов */
+
+/* 4. Единицы измерения */
+

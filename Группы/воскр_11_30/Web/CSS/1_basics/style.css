@@ -1,0 +1,53 @@
+h2 {
+    color: orange;
+    text-decoration: underline;
+}
+
+button {
+    color: pink;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+/* Правило записи стилей */
+/*
+селектор {
+    правило: значение;
+}
+*/
+
+/* Виды селекторов */
+/* Селектор - способ обращения к элементу html */
+/* 1. Селектор тега */
+h6 {
+    color: darkgreen;
+}
+
+/* 2. Селектор класса */
+.block {
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+}
+
+.header {
+    color: red;
+}
+
+/* 3. Селектор id */
+#text {
+    color: crimson;
+}
+
+/* Группировка селекторов */
+.header,
+.block {
+    color: blue;
+    background-color: aqua;
+}
+
+/* Вложенные селекторы */
+/* обращение к тегу p, находящемуся внутри тега div */
+div > p {
+    /*  стили  */
+}
