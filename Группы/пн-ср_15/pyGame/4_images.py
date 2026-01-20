@@ -58,22 +58,38 @@ print(image_lays_rect)
 image_lays_rect.topleft = (50, 50)
 image_lays_rect.midtop = (40, 45)
 
+# === Базовая анимация ===
+surface = pg.Surface((200, 200)) # создаем поверхность
+surface.fill((255, 0, 0))
 
+coord_x, coord_y = 100, 100
+speed = 400 # скорость перемещения
 
 isActive = True
 while isActive:
+    dt = clock.tick(60) / 1000 # привязка ко времени
+
     for event in pg.event.get():
         if event.type == pg.QUIT:
             isActive = False
+
+    keys = pg.key.get_pressed() # отслеживание состояния нажатости клавиш
+    if keys[pg.K_w]: # если нажата w, идем вверх
+        coord_y -= speed * dt
+    if keys[pg.K_s]:
+        coord_y += speed * dt
+    if keys[pg.K_a]:
+        coord_x -= speed * dt
+    if keys[pg.K_d]:
+        coord_x += speed * dt
 
     screen.fill((0,0,0))
 
     # blit - Block Image Transfer (перенос блока изображения)
     # .blit(image, (start_x, start_y))
     screen.blit(google_logo, (100, 100)) # отрисовка на экран
-
+    screen.blit(surface, (coord_x, coord_y)) # отрисовка поверхности
 
     pg.display.flip()
-    clock.tick(60)
 
 pg.quit()
