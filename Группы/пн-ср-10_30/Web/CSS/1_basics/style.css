@@ -1,0 +1,29 @@
+/* Принцип работы CSS */
+/*
+селектора {
+    правило: значение;
+}
+*/
+
+h4 {
+    color: orange;
+}
+
+/* === Селекторы === */
+/* Способ обращения к html элементу */
+/* 1. Селектор тега */
+h2 {
+    color: green;
+    letter-spacing: 5px;
+}
+
+/* 2. Селектор класса */
+.text {
+    background-color: bisque;
+}
+
+/* 3. Селектор id */
+#chpok {
+    color: brown;
+    background-color: aqua;
+}
