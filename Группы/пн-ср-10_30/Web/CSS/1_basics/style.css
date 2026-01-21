@@ -27,3 +27,14 @@ h2 {
     color: brown;
     background-color: aqua;
 }
+
+/* Группировка селекторов */
+.block-1,
+.block-2,
+.block-3 {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+

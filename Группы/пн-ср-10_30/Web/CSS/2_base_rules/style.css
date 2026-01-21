@@ -1,0 +1,33 @@
+/* Базовые правила */
+/* 1. Правила цвета */
+/*
+    color: red; - явное указание цвета
+    color: rgb(242, 28, 138); - rgb(red, green, blue), от 0 до 255
+    color: rgba(124, 46, 19, .5); - rgba(red, green, blue, alpha), alpha от 0 до 1
+    color: #fa72e0; - шестнадцатеричное представление цвета (#RRGGBB)
+    color: #2bc; - сокращенная форма записи (означает #22bbcc)
+*/
+
+/* 2. Цвет фона */
+/*
+    background-color: green; - через указание цвета
+    background: linear-gradient(); - задний фон градиент (можно использовать генератор)
+    background-image: url('путь'); - задний фон в виде картинки
+    background-size: cover; - размер картинки фона
+    background-position: center; - позиция картинки фона в своих границах
+    background-repeat: no-repeat; - повторения картинки фона
+*/
+
+/* 3. Правила шрифтов */
+/*
+    font-family: 'Monopuk', sans-serif; - указание шрифта (через запятую запасные)
+    font-size: 20px; - размер шрифта
+    font-weight: bold; - толщина шрифта (значения от 100 до 900 или наименования)
+    font-style: italic; - курсив
+    text-align: center; - выравнивание текста
+    text-decoration: underline; - украшение текста (подчеркивание / зачеркивание)
+    line-height: 1.5; - междустрочный интервал
+    letter-spacing: 12px; - расстояние между буквами
+*/
+
+/* 4. Единицы измерения */
