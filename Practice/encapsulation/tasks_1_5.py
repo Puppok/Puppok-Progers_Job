@@ -11,6 +11,9 @@
 F = C * 9/5 + 32,
 C = (F - 32) * 5/9
 """
+from statistics import mean
+
+
 class Temperature:
     def __init__(self, celsius: float):
         self._celsius = celsius
@@ -80,6 +83,7 @@ class Student:
 
     @property
     def average_grade(self):
+        return mean(self._grades)
         return sum(self._grades) / len(self._grades)
 
     def add_grade(self, grade: int):
@@ -112,6 +116,43 @@ class Student:
 - метод is_square() - проверка, является ли квадратом
 """
 
+class Rect:
+    def __init__(self, width: int, height: int):
+        self._width = width
+        self._height = height
+
+    @property
+    def width(self):
+        return self._width
+
+    @width.setter
+    def width(self, value: int):
+        if value <= 0:
+            raise AttributeError('Не может быть отрицательным')
+        self._width = value
+
+    @property
+    def height(self):
+        return self._height
+
+    @height.setter
+    def height(self, value: int):
+        if value <= 0:
+            raise AttributeError('Не может быть отрицательным')
+        self._height = value
+
+    @property
+    def area(self):
+        return self._width * self._height
+
+    @property
+    def perimeter(self):
+        return 2 * (self._width + self._height)
+
+    def is_square(self):
+        return self._width == self._height
+
+
 """
 ЗАДАЧА 4: Класс "Пользователь"
 Создайте класс User с приватными атрибутами _login и _password.
@@ -121,6 +162,28 @@ class Student:
 - метод check_password(password) - проверка пароля
 - property password_length - длина пароля (только для чтения)
 """
+
+class User:
+    def __init__(self, login: str, password: str):
+        self._login = login
+        self._password = password
+
+    @property
+    def login(self):
+        return self._login
+
+    @property
+    def password_length(self):
+        return len(self._password)
+
+    def check_password(self, password: str):
+        return password == self._password
+
+    def set_password(self, old_pass: str, new_pass: str):
+        if not self.check_password(old_pass):
+            raise AttributeError('Wrong old password')
+
+        self._password = new_pass
 
 """
 ЗАДАЧА 5: Класс "Товар"
@@ -132,3 +195,42 @@ class Student:
 - property total_cost - общая стоимость товара (только для чтения)
 - метод sell(amount) - продажа товара (уменьшение количества)
 """
+
+class Product:
+    def __init__(self, name: str, price: float, quantity: int):
+        self._name = name
+        self.price = price
+        self.quantity = quantity
+
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def price(self):
+        return self._price
+
+    @price.setter
+    def price(self, value: float):
+        if value <= 0:
+            raise ValueError('Only positive numbers are allowed')
+
+        self._price = value
+
+    @property
+    def quantity(self):
+        return self._quantity
+
+    @quantity.setter
+    def quantity(self, value: int):
+        if value < 0:
+            raise ValueError('Can\'t be lower than 0')
+
+        self._quantity = value
+
+    @property
+    def total_cost(self):
+        return self._quantity * self._price
+
+    def sell(self, amount: int):
+        self.quantity -= amount
