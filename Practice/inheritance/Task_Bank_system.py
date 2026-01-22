@@ -38,9 +38,9 @@
 
 
 class BankAccount:
-    def __init__(self, accountNumber: int, owner: str, initialBalance: float, pin: int):
-        self.accountNumber = accountNumber
-        self._balance = initialBalance
+    def __init__(self, account_number: int, owner: str, initial_balance: float, pin: int):
+        self.accountNumber = account_number
+        self._balance = initial_balance
         self._owner = owner
         self.__pin = pin
 
@@ -140,29 +140,29 @@ class SavingsAccount(BankAccount):
 
 # ПРИМЕР ИСПОЛЬЗОВАНИЯ:
 # Обычный счёт
-# account1 = BankAccount("ACC001", "Иван Петров", 10000, 1234)
-# print(account1.balance)  # 10000
-# print(account1.owner)    # Иван Петров
-#
-# account1.deposit(5000)   # Пополнение: +5000 руб
-# account1.withdraw(3000, 1234)  # Снятие: -3000 руб
-# print(account1.balance)  # 12000
-#
-# # Сберегательный счёт
-# savings = SavingsAccount("SAV001", "Мария Иванова", 50000, 5678, 5.0, 10000)
-# print(savings.balance)  # 50000
-# print(savings.interestRate)  # 5.0
-#
-# savings.add_interest()  # Начислены проценты: +2500 руб (5% от 50000)
-# print(savings.balance)  # 52500
-#
-# # savings.withdraw(40000, 5678)  # Попытка снять 40000
-# # Ошибка: После снятия баланс будет ниже минимального (10000)
-#
-# savings.withdraw(30000, 5678)  # Снятие: -30000 руб (баланс = 22500, это > 10000)
-# print(savings.balance)  # 22500
-#
-# # Перевод между счетами
-# account1.transfer(5000, savings, 1234)  # Перевод 5000 от account1 к savings
-# print(account1.balance)  # 7000
-# print(savings.balance)   # 27500
+account1 = BankAccount("ACC001", "Иван Петров", 10000, 1234)
+print(account1.balance)  # 10000
+print(account1.owner)    # Иван Петров
+
+account1.deposit(5000)   # Пополнение: +5000 руб
+account1.withdraw(3000, 1234)  # Снятие: -3000 руб
+print(account1.balance)  # 12000
+
+# Сберегательный счёт
+savings = SavingsAccount("SAV001", "Мария Иванова", 50000, 5678, 5.0, 10000)
+print(savings.balance)  # 50000
+print(savings.interestRate)  # 5.0
+
+savings.add_interest()  # Начислены проценты: +2500 руб (5% от 50000)
+print(savings.balance)  # 52500
+
+# savings.withdraw(40000, 5678)  # Попытка снять 40000
+# Ошибка: После снятия баланс будет ниже минимального (10000)
+
+savings.withdraw(30000, 5678)  # Снятие: -30000 руб (баланс = 22500, это > 10000)
+print(savings.balance)  # 22500
+
+# Перевод между счетами
+account1.transfer(5000, savings, 1234)  # Перевод 5000 от account1 к savings
+print(account1.balance)  # 7000
+print(savings.balance)   # 27500
