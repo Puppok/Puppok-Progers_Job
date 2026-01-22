@@ -90,10 +90,12 @@ new_rect = image_icon_rect.move(50, 300)
 
 # Пример работы
 # Скорость движения
-speed = 5
+speed = 200
 
 isActive = True
 while isActive:
+    dt = clock.tick(60) / 1000
+
     for event in pg.event.get():
         if event.type == pg.QUIT:
             isActive = False
@@ -102,13 +104,13 @@ while isActive:
     keys = pg.key.get_pressed()
 
     if keys[pg.K_LEFT]:
-        image_icon_rect.x -= speed
+        image_icon_rect.x -= speed * dt
     if keys[pg.K_RIGHT]:
-        image_icon_rect.x += speed
+        image_icon_rect.x += speed * dt
     if keys[pg.K_UP]:
-        image_icon_rect.y -= speed
+        image_icon_rect.y -= speed * dt
     if keys[pg.K_DOWN]:
-        image_icon_rect.y += speed
+        image_icon_rect.y += speed * dt
 
     # ограничение области движения по размерам экрана
     image_icon_rect.clamp_ip(screen.get_rect())
@@ -121,8 +123,7 @@ while isActive:
     # screen.blit(google_logo, (300, 50))
     screen.blit(image_icon, image_icon_rect)
 
-
     pg.display.flip()
-    clock.tick(60)
+
 
 pg.quit()
