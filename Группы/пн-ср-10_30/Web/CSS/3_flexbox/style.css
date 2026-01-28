@@ -1,0 +1,50 @@
+/* обращение ко всем тегам html */
+/* === Заготовка === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* === Раскидываем блоки === */
+.header {
+    height: 10%;
+    display: flex; /* отображение flex */
+    justify-content: center; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    gap: 50px; /* отступ между flex элементами */
+}
+
+.wrapper {
+    height: 90%;
+    display: flex; /* отображение flex */
+}
+
+.main {
+    height: 100%;
+    width: 75%;
+    background-color: crimson;
+}
+
+.aside {
+    height: 100%;
+    width: 25%;
+    background-color: pink;
+}
+
+/* === Шапка === */
+.header_link {
+    text-decoration: none; /* убрать подчеркивание */
+    color: #9b823b;
+    font-size: 20px;
+    background-color: bisque;
+    border-radius: 15px; /* скругление углов */
+    padding: 10px;
+}
+
+/*  */
