@@ -1,0 +1,26 @@
+/* Базовая структура css  */
+* { /* обращение ко всем html элементам */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    height: 10%;
+    width: 100%;
+    background-color: aqua;
+
+    /* Отображение внутренних элементов как флексбоксы */
+    display: flex;
+    justify-content: center; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    gap: 50px; /* отступ между элементами */
+    /* flex-direction: column; - вертикальное направление элементов*/
+}
+
+/*  */

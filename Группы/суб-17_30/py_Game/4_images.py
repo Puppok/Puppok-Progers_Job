@@ -28,12 +28,21 @@ pg.draw.circle(surface_image, (0, 0, 255), (50, 50), 10)
 
 # Картинки с альфа каналом (прозрачность)
 google_logo = pg.image.load('./assets/google_logo.png').convert_alpha()
-google_logo.set_alpha(128) # уровень прозрачности (0 - прозрачно, 255 - нет)
+google_logo.set_alpha(255) # уровень прозрачности (0 - прозрачно, 255 - нет)
 google_logo.set_colorkey((235, 64, 50)) # фильтр прозрачности цвета
 
 # Движение картинки
 moving_surface = pg.Surface((100, 100)) # создаем поверхность / картинку
 moving_surface.fill((255, 0, 0))
+
+# Вращение картинки
+# 1. Поворот на определенный угол
+rotated_google = pg.transform.rotate(google_logo, 90)
+
+# Зеркальное отражение (по х, по y, по обеим осям)
+flipped_x = pg.transform.flip(rotated_google, True, False)
+flipped_y = pg.transform.flip(rotated_google, False, True)
+flipped_both = pg.transform.flip(rotated_google, True, True)
 
 # Стартовая позиция + скорость
 start_x, start_y = 100, 300
@@ -64,7 +73,7 @@ while isActive:
     # .blit(image, (start_x, start_y))
     screen.blit(frog_image,(0, 0))
     screen.blit(surface_image, (30, 30)) # отрисовка области на экране
-    screen.blit(google_logo, (50, 50))
+    screen.blit(flipped_both, (50, 50))
     screen.blit(moving_surface, (start_x, start_y)) # отрисовка движущейся поверхности
 
     pg.display.flip()

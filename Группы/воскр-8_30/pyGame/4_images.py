@@ -28,20 +28,40 @@ smooth_lays = pg.transform.smoothscale(image_lays, (400, 400))
 
 
 # --- Вращение изображения ---
+# 1. Поворот на определенный угол
+rotated_google = pg.transform.rotate(image_lays, 90)
 
+# Зеркальное отражение (по х, по y, по обеим осям)
+flipped_x = pg.transform.flip(rotated_google, True, False)
+flipped_y = pg.transform.flip(rotated_google, False, True)
+flipped_both = pg.transform.flip(rotated_google, True, True)
+
+
+
+# отработка
+coord_x, coord_y = 50, 200
+speed = 200
 
 isActive = True
 while isActive:
+    dt = clock.tick(60) / 1000
+
     for event in pg.event.get():
         if event.type == pg.QUIT:
             isActive = False
+
+    coord_x += speed * dt
+
+    if coord_x > 1500:
+        coord_x = -800
 
     screen.fill((0, 0, 0))
 
     # Отрисовка картинки на экране
     # blit - Block Image Transfer (перенос блока изображения)
-    screen.blit(smooth_lays, (50, 50))
+    screen.blit(smooth_lays, (coord_x, coord_y))
 
     pg.display.flip()
+
 
 pg.quit()

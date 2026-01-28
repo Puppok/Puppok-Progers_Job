@@ -53,3 +53,5 @@ console.log(test_array)
 let filtered_arr = test_array.filter(number => number % 2 === 0)
 console.log(filtered_arr)
 console.log(test_array)
+
+console.log(Math.ceil(23.1))
