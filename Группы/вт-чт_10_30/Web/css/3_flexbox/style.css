@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    height: 10%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center; /* горизонтальное выравнивание */
+    align-items: center; /* вертикальное выравнивание */
+    gap: 30px; /* отступ между flex элементами */
+}
+
+.header_link {
+    text-decoration: none; /* убрать подчеркивание */
+    color: white;
+    height: 30px;
+    width: 100px;
+    background-color: #3498db;
+    border-radius: 15px; /* скруглить углы */
+    display: flex;
+    justify-content: center; /* горизонтальное выравнивание текста внутри блока */
+    align-items: center; /* вертикальное выравнивание текста внутри блока */
+}
+/*  */
+.wrapper {
+    height: 90%;
+    background-color: bisque;
+
+    /* создаем гибкий контейнер (элементы внутри встают в строчку) */
+    display: flex;
+}
+
+.main {
+    height: 100%;
+    width: 75%;
+    background-color: brown;
+}
+
+.aside {
+    height: 100%;
+    width: 25%;
+    background-color: gray;
+}
