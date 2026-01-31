@@ -28,8 +28,9 @@ class Coin(pg.sprite.Sprite):
         self.rect.x = coord_x
         self.rect.y = coord_y
 
+# Движущийся спрайт
 class MovingEnemy(pg.sprite.Sprite):
-    def __init__(self, coord_x, coord_y):
+    def __init__(self, coord_x, coord_y, speed):
         pg.sprite.Sprite.__init__(self)
 
         self.image = pg.Surface((50, 50))
@@ -39,13 +40,17 @@ class MovingEnemy(pg.sprite.Sprite):
         self.rect.x = coord_x
         self.rect.y = coord_y
 
-        self.speed_x = 5
+        self.speed_x = speed
 
     def update(self):
         self.rect.x += self.speed_x
 
         if self.rect.right >= 800 or self.rect.left <= 0:
             self.speed_x *= -1
+
+# Столкновения спрайтов
+# pygame.sprite.spritecollide(sprite, group, dokill)
+# pygame.sprite.groupcollide(group_1, group_2, dokill_1, dokill_2)
 
 pg.init()
 
@@ -64,11 +69,12 @@ for _ in range(50):
     coins.add(coin) # добавление спрайта в группу
 
 enemies = pg.sprite.Group()
-for _ in range(10):
+for _ in range(100):
     random_x = random.randint(50, 750)
     random_y = random.randint(50, 550)
+    random_speed = random.randint(5, 15)
 
-    enemy = MovingEnemy(random_x, random_y)
+    enemy = MovingEnemy(random_x, random_y, random_speed)
     enemies.add(enemy)
 
 isActive = True
@@ -79,10 +85,13 @@ while isActive:
         if event.type == pg.QUIT:
             isActive = False
 
+    enemies.update() # вызов метода update для каждого объекта класса
+
     screen.fill((3, 252, 252))
 
     screen.blit(player.image, player.rect) # отрисовка спрайта
     coins.draw(screen) # отрисовка группы спрайтов
+    enemies.draw(screen) # отрисовка движущихся объектов
 
     pg.display.flip()
 
