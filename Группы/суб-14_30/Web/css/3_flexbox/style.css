@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* === Header === */
+.header {
+    height: 15%;
+    display: flex; /* flex отображение */
+    justify-content: center; /* горизонтальное выравнивание */
+    align-items: center; /* вертикальное выравнивание */
+    gap: 50px; /* отступ между flex элементами */
+}
+
+.header_link {
+    font-size: 42px;
+    text-decoration: none;
+    color: #03406A;
+    background-color: #65A5D1;
+    height: 80px;
+    width: 250px;
+    border-radius: 15px; /* скругление углов */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Main === */
+.wrapper {
+    height: 85%;
+    display: flex; /* режим отображения - flex элементы */
+}
+
+.main {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll; /* скролл для main блока */
+}
+
+.main::-webkit-scrollbar { /* убрать отображение скролла */
+    display: none;
+}
+
+.main_block {
+    height: 200px;
+    width: 200px;
+    background-color: #24577B;
+    border-radius: 25px;
+}
+
+/* === Aside === */
+.aside {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column; /* направление flex элементов */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.aside_img {
+    height: 280px;
+    width: 280px;
+    background-color: #24577B;
+    border-radius: 50px;
+}
+
+/* display: flex; - flex отображение *!*/
+/* justify-content: center; - горизонтальное выравнивание *!*/
+/* align-items: center; - вертикальное выравнивание *!*/
+/* gap: 50px; - отступ между flex элементами *!*/
+/* flex-direction: column; - направление flex элементов *!*/
+/* flex-wrap: wrap; - перенос flex элементов */
