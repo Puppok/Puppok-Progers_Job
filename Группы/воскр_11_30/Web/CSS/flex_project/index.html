@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Блог о путешествиях</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header"> <!-- шапка сайта -->
         <div class="logo">TravelBlog</div>
-        <nav class="nav-manu"> <!-- блок навигации -->
+        <nav class="nav-menu"> <!-- блок навигации -->
             <a href="#">Главная</a>
             <a href="#">Страны</a>
             <a href="#">Советы</a>
@@ -15,60 +16,72 @@
         </nav>
     </header>
 
-    <div class="main"> <!-- главная часть сайта -->
+    <main class="main"> <!-- главная часть сайта -->
         <section class="posts"> <!-- группа карточек постов -->
             <h2>Последние статьи</h2>
 
             <article class="post-card"> <!-- карточка с постом -->
                 <figure class="post-image"> <!-- картинка поста -->
-                    <img src="тут картинка Парижа" alt="Париж йопта"> <!-- картинка -->
+                    <img src="assets/paris-1.jpg" alt="Париж йопта"> <!-- картинка -->
                     <figcaption>Эйфелева башня</figcaption> <!-- подпись картинки -->
                 </figure>
                 <div class="post-content"> <!-- наполнение поста -->
                     <h3>Неделя в Париже</h3>
                     <p>Мой отпуск во французской столице. Эйфелева башня, Лувр, круассаны...</p>
-                    <a href="#" class="read-mode">Читать далее...</a>
+                    <a href="#" class="read-more">Читать далее...</a>
                 </div>
             </article>
 
             <article class="post-card"> <!-- карточка с постом -->
                 <figure class="post-image"> <!-- картинка поста -->
-                    <img src="тут картинка Парижа" alt="Париж йопта"> <!-- картинка -->
+                    <img src="assets/paris-2.jpg" alt="Париж йопта"> <!-- картинка -->
                     <figcaption>Эйфелева башня</figcaption> <!-- подпись картинки -->
                 </figure>
                 <div class="post-content"> <!-- наполнение поста -->
                     <h3>Неделя в Париже</h3>
                     <p>Мой отпуск во французской столице. Эйфелева башня, Лувр, круассаны...</p>
-                    <a href="#" class="read-mode">Читать далее...</a>
+                    <a href="#" class="read-more">Читать далее...</a>
                 </div>
             </article>
 
             <article class="post-card"> <!-- карточка с постом -->
                 <figure class="post-image"> <!-- картинка поста -->
-                    <img src="тут картинка Парижа" alt="Париж йопта"> <!-- картинка -->
+                    <img src="assets/paris-3.jpg" alt="Париж йопта"> <!-- картинка -->
                     <figcaption>Эйфелева башня</figcaption> <!-- подпись картинки -->
                 </figure>
                 <div class="post-content"> <!-- наполнение поста -->
                     <h3>Неделя в Париже</h3>
                     <p>Мой отпуск во французской столице. Эйфелева башня, Лувр, круассаны...</p>
-                    <a href="#" class="read-mode">Читать далее...</a>
+                    <a href="#" class="read-more">Читать далее...</a>
                 </div>
             </article>
 
             <article class="post-card"> <!-- карточка с постом -->
                 <figure class="post-image"> <!-- картинка поста -->
-                    <img src="тут картинка Парижа" alt="Париж йопта"> <!-- картинка -->
+                    <img src="assets/paris-4.jpg" alt="Париж йопта"> <!-- картинка -->
                     <figcaption>Эйфелева башня</figcaption> <!-- подпись картинки -->
                 </figure>
                 <div class="post-content"> <!-- наполнение поста -->
                     <h3>Неделя в Париже</h3>
                     <p>Мой отпуск во французской столице. Эйфелева башня, Лувр, круассаны...</p>
-                    <a href="#" class="read-mode">Читать далее...</a>
+                    <a href="#" class="read-more">Читать далее...</a>
                 </div>
             </article>
-
         </section>
-    </div>
+
+        <aside class="sidebar">
+            <h3>О блоге</h3>
+            <p>Разные полезные штуки о путешествиях. Фотки, советы, истории</p>
+
+            <h3>Популярные страны</h3>
+            <ul>
+                <li><a href="#">Франция</a></li>
+                <li><a href="#">Япония</a></li>
+                <li><a href="#">Италия</a></li>
+                <li><a href="#">Испания</a></li>
+            </ul>
+        </aside>
+    </main>
 
     <footer class="footer"> <!-- подвал -->
         <p>&copy; TravelBlog. Все права защищены</p>
