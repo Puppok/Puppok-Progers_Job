@@ -1,12 +1,12 @@
 import pygame as pg
-
+import random
 
 class Player(pg.sprite.Sprite):
     def __init__(self, screen_width, screen_height, speed_x):
         super().__init__()
 
         self.load_image = pg.image.load('./assets/starship.png')
-        self.image = pg.transform.scale(self.load_image, (100, 100))
+        self.image = pg.transform.scale(self.load_image, (50, 50))
 
         self.rect = self.image.get_rect()
         self.rect.centerx = screen_width // 2
@@ -22,7 +22,38 @@ class Player(pg.sprite.Sprite):
             self.rect.x += self.speed_x
 
 class Bullet(pg.sprite.Sprite):
-    pass
+    def __init__(self, coord_x, coord_y):
+        super().__init__()
+
+        self.load = pg.image.load('./assets/bullet.png')
+        self.scale_load = pg.transform.scale(self.load, (20, 20))
+        self.image = pg.transform.rotate(self.load, 90)
+
+        self.rect = self.image.get_rect()
+        self.rect.x = coord_x
+        self.rect.y = coord_y
+
+        self.speed_y = -10
+
+    def update(self):
+        self.rect.y += self.speed_y
+        if self.rect.bottom < 0:
+            self.kill()
 
 class Enemy(pg.sprite.Sprite):
-    pass
+    def __init__(self, coord_x, coord_y):
+        super().__init__()
+
+        self.load = pg.image.load('./assets/enemy.png')
+        self.image = pg.transform.scale(self.load, (50, 50))
+
+        self.rect = self.image.get_rect()
+        self.rect.x = coord_x
+        self.rect.y = coord_y
+
+        self.speed_x = random.choice([-2, 2])
+
+    def update(self):
+        self.rect.x += self.speed_x
+        if self.rect.left < 0 or self.rect.right > 800:
+            self.speed_x *= -1
