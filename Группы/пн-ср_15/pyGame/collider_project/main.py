@@ -1,4 +1,3 @@
-import pygame as pg
 from classes import * # импортируем все классы (Player, Bullet, Enemy)
 
 pg.init()
@@ -32,6 +31,31 @@ while isActive:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             isActive = False
+
+    # Управление персонажем
+    keys = pg.key.get_pressed()
+    player.update(keys)
+
+    # Стрельба
+    shoot_delay -= dt
+    if keys[pg.K_SPACE] and shoot_delay <= 0:
+        bullet = Bullet(player.rect.centerx, player.rect.top)
+        all_sprites.add(bullet)
+        bullets.add(bullet)
+        shoot_delay = 0.4
+
+    # Движение пуль и противников
+    bullets.update()
+    enemies.update()
+
+    # Столкновение пули и противника
+    hits = pg.sprite.groupcollide(bullets, enemies, True, True)
+    score += len(hits)
+    if hits:
+        print(f'Score: {score}')
+
+    screen.fill((0, 0, 0))
+    all_sprites.draw(screen)
 
     pg.display.flip()
 
