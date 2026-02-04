@@ -7,6 +7,8 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
 
+import matplotlib.pyplot as plt
+
 # === 1. Загрузка данных ===
 # Iris датасет
 # 150 примеров
@@ -78,5 +80,67 @@ print(f'Train complete\n'
       f'Accuracy: {history.history["accuracy"][-1]:.3f}')
 
 # === 6. Тесты ===
+# .evaluate(test_data, test_output, progress_bar) - тестирует обученную модель на тестовых данных
+test_loss, test_accuracy = model.evaluate(data_test, target_test_cat, verbose = 0)
 
+print(f'\nLoss test result: {test_loss:.4f}\n'
+      f'Accuracy test result: {test_accuracy:.3f} ({test_accuracy*100:.1f}%)\n')
+
+# === 7. Предсказания ===
+# .predict(new_data, progress_bar) - получить ответ по новым данным
+predictions = model.predict(data_test[10:21], verbose = 0)
+
+for i in range(10):
+    pred_class = np.argmax(predictions[i])
+    true_class = target_test[i]
+    confidence = predictions[i][pred_class]
+
+    status = 'Ok' if pred_class == true_class else 'Fail'
+
+    print(f'Example {i + 1}: {status}\n'
+          f'True class: {true_class}\n'
+          f'Predicted class: {pred_class}\n'
+          f'Confidence: {confidence*100:.1f}%\n'
+          f'Model answer: {predictions[i]}\n')
+
+
+# === Визуализация ===
+train_acc = history.history['accuracy']
+train_loss = history.history['loss']
+val_acc = history.history['val_accuracy']
+val_loss = history.history['val_loss']
+
+epochs_range = range(1, len(train_acc) + 1)
+
+# создание графика
+# .subplots(rows, columns, figsize = (width, height))
+# rows - строки
+# columns - колонки графика
+# figsize - размер изображения в дюймах
+fig, (acc, loss) = plt.subplots(1, 2, figsize = (14, 5))
+
+# рисуем графики
+acc.plot(epochs_range, train_acc, 'b-', label = 'Train accuracy', linewidth = 2)
+# epochs_range - кол-во эпох
+# train_acc - данные для отрисовки
+# b-/r- - синяя/красная линия
+# label - название для легенды
+# linewidth - толщина линии графика
+acc.plot(epochs_range, val_acc, 'r-', label = 'Validation accuracy', linewidth = 2)
+acc.set_title('Model Accuracy', fontsize = 14, fontweight = 'bold') # заголовок графика
+acc.set_xlabel('Epoch') # подпись оси X
+acc.set_ylabel('Accuracy') # подпись оси Y
+acc.legend() # создание легенды из параметров label
+acc.grid(True, alpha = 0.3) # отображение сетки с 30% прозрачности
+
+loss.plot(epochs_range, train_loss, 'b-', label = 'Train loss', linewidth = 2)
+loss.plot(epochs_range, val_loss, 'r-', label = 'Validation loss', linewidth = 2)
+loss.set_title('Model Accuracy', fontsize = 14, fontweight = 'bold')
+loss.set_xlabel('Epoch')
+loss.set_ylabel('Accuracy')
+loss.legend()
+loss.grid(True, alpha = 0.3)
+
+plt.tight_layout() # подготовка графика, подстраивание размеров
+plt.show() # отрисовка графика
 
