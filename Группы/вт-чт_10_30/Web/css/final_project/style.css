@@ -23,6 +23,57 @@ body {
 }
 
 /* === Кнопки === */
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-secondary:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-outline:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+/* Заголовки секций */
+.section-title {
+    font-size: clamp(32px, 5vw, 42px);
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
 
 /* == Навигация === */
 .navbar {
@@ -82,4 +133,58 @@ body {
 
 .nav_menu a:hover {
     color: #667eea;
+}
+
+/* === Main секция === */
+.main {
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 60px 0;
+}
+
+.main-container {
+    max-width: 800px;
+    padding: 0 20px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content h1 {
+    font-size: clamp(36px, 6vw, 56px);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.main-content p {
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.app-mockup {
+    font-size: 200px;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
