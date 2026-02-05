@@ -27,7 +27,7 @@ class Bullet(pg.sprite.Sprite):
 
         self.load = pg.image.load('./assets/bullet.png')
         self.scale_load = pg.transform.scale(self.load, (20, 20))
-        self.image = pg.transform.rotate(self.load, 90)
+        self.image = pg.transform.rotate(self.scale_load, 90)
 
         self.rect = self.image.get_rect()
         self.rect.x = coord_x
