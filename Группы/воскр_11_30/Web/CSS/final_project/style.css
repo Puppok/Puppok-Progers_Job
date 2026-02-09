@@ -17,5 +17,89 @@ body {
 }
 
 /* Контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 /* Навигация */
+.navbar {
+    position: fixed; /* фиксированная позиция элемента */
+    top: 0; /* отступ сверху */
+    left: 0; /* отступ слева */
+    right: 0; /* отступ справа */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* тень блока (x, y, рассеивание, цвет) */
+    z-index: 1000; /* позиция на сайте (на переднем плане) */
+}
+
+.nav_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.nav_menu {
+    display: flex;
+    list-style: none; /* убрать отображение нумерации списка */
+    gap: 30px;
+}
+
+.nav_menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; /* плавная анимация для color */
+    position: relative; /* относительное позиционирование */
+}
+
+.nav_menu a::after { /* псевдоэлемент after */
+    content: ""; /* наполнение (пустое) */
+    position: absolute; /* абсолютное позиционирование */
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #667eea;
+    transition: width 0.3s ease; /* плавная анимация для ширины */
+}
+
+.nav_menu a:hover::after { /* :hover - срабатывает при наведении курсора на элемент */
+    width: 100%;
+}
+
+.nav_menu a:hover {
+    color: #667eea;
+}
+
+/* Main секция */
+.main {
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 60px 0;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
