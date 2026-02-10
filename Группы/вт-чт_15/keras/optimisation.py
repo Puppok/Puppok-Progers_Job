@@ -1,5 +1,6 @@
 from keras.models import Sequential
 from keras.layers import Dense
+import matplotlib.pyplot as plt
 
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -75,3 +76,45 @@ x_test = scaler.transform(x_test)
 
 y_train_cat = to_categorical(y_train, num_classes = 3)
 y_test_cat = to_categorical(y_test, num_classes = 3)
+
+# Тесты разных конфигураций
+config_test_results = []
+for layer_config, name in config:
+    test_config = create_and_train_model(layer_config, name, x_test, x_train, y_test_cat, y_train_cat)
+    config_test_results.append(test_config)
+
+for result in config_test_results:
+    print(f'Config name: {result["name"]}\n'
+          f'Test accuracy: {result["test_accuracy"]:.4f}\n'
+          f'Test loss: {result["test_loss"]:.4f}\n'
+          f'Params: {result["params"]}\n'
+          f'Val accuracy: {result["val_accuracy"]:.4f}\n')
+
+# Определение лучшей модели
+best_result = max(config_test_results, key = lambda config: config["test_accuracy"])
+print(f'Best config name: {best_result["name"]}\n'
+      f'Best test accuracy: {best_result["test_accuracy"]:.4f}\n'
+      f'Best val accuracy: {best_result["val_accuracy"]:.4f}\n')
+
+# Визуализация
+fig, ax = plt.subplots(figsize = (12, 6))
+
+names = [result['name'] for result in config_test_results]
+test_acc = [result['test_accuracy'] for result in config_test_results]
+params = [result['params'] for result in config_test_results]
+
+columns = range(len(config_test_results))
+bars = ax.bar(columns, test_acc, color = 'blue', edgecolor = 'navy', linewidth = 1.5)
+
+best_id = names.index(best_result['name'])
+bars[best_id].set_color('gold')
+bars[best_id].set_edgecolor('orange')
+
+ax.set_xlabel('Architecture', fontsize = 12)
+ax.set_ylabel('Test Accuracy', fontsize = 12)
+ax.set_title('Comparison', fontsize = 14, fontweight = 'bold')
+
+ax.set_xticks(columns)
+ax.set_xticklabels(names, rotation = 45, ha = 'right')
+ax.set_ylim((0.9, 1.0))
+ax.grid(axis = 'y', alpha = 0.3)
