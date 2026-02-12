@@ -56,17 +56,6 @@ body {
     color: white;
 }
 
-.btn-outline {
-    background-color: transparent;
-    color: #667eea;
-    border-color: #667eea;
-}
-
-.btn-outline:hover {
-    background-color: #667eea;
-    color: white;
-}
-
 /* Заголовки секций */
 .section-title {
     font-size: clamp(32px, 5vw, 42px);
@@ -187,4 +176,46 @@ body {
     50% {
         transform: translateY(-20px);
     }
+}
+
+/* Секция преимущества */
+.features {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.8;
 }
