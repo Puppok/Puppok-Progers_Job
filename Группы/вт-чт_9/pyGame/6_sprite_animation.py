@@ -1,7 +1,8 @@
 import pygame as pg
 
+# Анимированный спрайт
 class AnimatedSprite(pg.sprite.Sprite):
-    def init(self, coord_x, coord_y, frames, frame_duration):
+    def __init__(self, coord_x, coord_y, frames, frame_duration):
         super().__init__()
 
         self.frames = frames
@@ -29,6 +30,24 @@ screen = pg.display.set_mode((800, 600))
 pg.display.set_caption('Анимации спрайтов')
 clock = pg.time.Clock()
 
+# Подготовка анимированного спрайта
+animated_frames = []
+for i in range(1, 11):
+    white_color = (255, 255, 255)
+    frame = pg.Surface((100, 100))
+    frame.fill(white_color)
+    frame.set_colorkey(white_color)
+
+    radius = 4 * i + 10
+    pg.draw.circle(frame, (255, 255, 0), (50, 50), radius)
+    animated_frames.append(frame)
+
+animated_group = pg.sprite.Group()
+for i in range(3):
+    sprite = AnimatedSprite(150 * i + 350, 100, animated_frames, 0.05)
+    animated_group.add(sprite)
+# -------
+
 # Создание кадров анимации
 frames = [] # массив кадров
 for i in range(100):
@@ -52,12 +71,16 @@ while isActive:
 
     frame_timer += dt
     if frame_timer >= frame_duration:
-        print(current_frame)
         frame_timer = 0
         current_frame = (current_frame + 1) % len(frames)
 
+    # Для анимированного спрайта
+    animated_group.update(dt)
+
+
     screen.fill((0, 0, 0))
     screen.blit(frames[current_frame], (100, 100))
+    animated_group.draw(screen)
 
     pg.display.flip()
 
