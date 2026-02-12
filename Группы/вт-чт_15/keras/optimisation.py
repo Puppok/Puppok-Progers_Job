@@ -106,15 +106,27 @@ params = [result['params'] for result in config_test_results]
 columns = range(len(config_test_results))
 bars = ax.bar(columns, test_acc, color = 'blue', edgecolor = 'navy', linewidth = 1.5)
 
+# Выделить другим цветом наилучшую
 best_id = names.index(best_result['name'])
 bars[best_id].set_color('gold')
 bars[best_id].set_edgecolor('orange')
 
+# Наименования осей
 ax.set_xlabel('Architecture', fontsize = 12)
 ax.set_ylabel('Test Accuracy', fontsize = 12)
 ax.set_title('Comparison', fontsize = 14, fontweight = 'bold')
 
+# Установка делений графика
 ax.set_xticks(columns)
 ax.set_xticklabels(names, rotation = 45, ha = 'right')
-ax.set_ylim((0.9, 1.0))
+ax.set_ylim((0.2, 1.5))
 ax.grid(axis = 'y', alpha = 0.3)
+
+# Добавление данных для отрисовки столбца
+for i, (accuracy, params) in enumerate(zip(test_acc, params)):
+    ax.text(i, accuracy + 0.005, f'acc: {accuracy:.3f}\n{params}p', ha = 'center', va = 'bottom', fontsize = 9)
+
+# Отрисовка графика
+plt.tight_layout()
+plt.savefig('plot.png', dpi=300, bbox_inches='tight')
+# plt.show()
