@@ -29,7 +29,7 @@ pg.display.set_caption('Анимации спрайтов')
 clock = pg.time.Clock()
 
 # === Работа со спрайт листом ===
-spritesheet = pg.image.load('spritesheet.png')
+spritesheet = pg.image.load('spritesheet.png').convert_alpha()
 
 def get_frames(sheet, frame_width, frame_height, count):
     frames = []
@@ -39,7 +39,8 @@ def get_frames(sheet, frame_width, frame_height, count):
         frames.append(frame)
     return frames
 
-spritesheet_frames = get_frames(spritesheet, spritesheet.get_width() // 8, spritesheet.get_height() // 2, 8)
+spritesheet_frames = get_frames(spritesheet, spritesheet.get_width() // 8,
+                                spritesheet.get_height() // 2, 8)
 
 cur_fr = 0
 anim_speed = 0.2
