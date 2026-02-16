@@ -16,7 +16,8 @@ class Player(pg.sprite.Sprite):
     def update(self, keys):
         if keys[pg.K_a] and self.rect.left > 0:
             self.rect.x -= self.speed_x
-        if keys[pg.K_d] and self.rect.right < 800:
+        if (key
+                and self.rect.right < 800):
             self.rect.x += self.speed_x
 
 class Enemy(pg.sprite.Sprite):
