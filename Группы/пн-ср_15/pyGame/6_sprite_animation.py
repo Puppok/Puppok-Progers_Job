@@ -22,12 +22,30 @@ class AnimatedSprite(pg.sprite.Sprite):
             self.current_frame = ((self.current_frame + 1) % len(self.frames))
             self.image = self.frames[self.current_frame]
 
-
 pg.init()
 
 screen = pg.display.set_mode((800, 600))
 pg.display.set_caption('Анимации спрайтов')
 clock = pg.time.Clock()
+
+# === Работа со спрайт листом ===
+spritesheet = pg.image.load('spritesheet.png').convert_alpha()
+
+def get_frames(sheet, frame_width, frame_height, count):
+    frames = []
+    for i in range(count):
+        rect = pg.Rect(i * frame_width, 0, frame_width, frame_height)
+        frame = sheet.subsurface(rect)
+        frames.append(frame)
+    return frames
+
+spritesheet_frames = get_frames(spritesheet, spritesheet.get_width() // 8,
+                                spritesheet.get_height() // 2, 8)
+
+cur_fr = 0
+anim_speed = 0.2
+anim_timer = 0
+# --------------------
 
 arr_frames = [] # список для хранения кадров
 for i in range(5):
@@ -65,16 +83,25 @@ while isActive:
         if event.type == pg.QUIT:
             isActive = False
 
+    # --- Анимация спрайт листа ---
+    anim_timer += anim_speed
+    if anim_timer >= 1:
+        anim_timer = 0
+        cur_fr = (cur_fr + 1) % len(spritesheet_frames)
+    # -----------
+
+
     frame_timer += dt # таймер отсчитывает время в секундах
     if frame_timer >= frame_duration: # если время таймера превышает длительность анимации
         frame_timer = 0 # обнуление таймера
         current_frame = (current_frame + 1) % len(arr_frames) # смена кадра
 
-    sprites.update(dt)
+    sprites.update(dt) # обновление группы спрайтов
 
     screen.fill((0, 0, 0))
     screen.blit(arr_frames[current_frame], (100, 100)) # отрисовка картинки с определенным кадром
-    sprites.draw(screen)
+    sprites.draw(screen) # отрисовка группы спрайтов
+    screen.blit(spritesheet_frames[cur_fr], (100, 100))
 
     pg.display.flip()
 

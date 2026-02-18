@@ -6,7 +6,6 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from keras.utils import to_categorical
-import numpy as np
 
 config = [
     ([(8, 'relu'),  (8, 'relu'), (3, 'softmax')], 'Shallow-8'),

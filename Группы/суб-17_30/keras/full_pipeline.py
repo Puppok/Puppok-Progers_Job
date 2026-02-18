@@ -110,41 +110,41 @@ for i in range(5):
             f'Chance: {predictions[i]}\n')
 
 # === Визуализация ===
-# train_acc = history.history['accuracy']
-# val_acc = history.history['val_accuracy']
-# train_loss = history.history['loss']
-# val_loss = history.history['val_loss']
-#
-# epochs_range = range(1, len(train_loss) + 1)
-#
-# # создание графика: 1 строка, 2 колонки, размеры 14x5" (дюймов)
-# fig, (ax1, ax2) = plt.subplots(1, 2, figsize = (14, 5))
-#
-# # отрисовка графика 1
-# ax1.plot(epochs_range, train_acc, 'b-', label = 'Train accuracy', linewidth = 2)
-# # epochs_range - кол-во эпох обучения
-# # train_acc/val_acc - данные для отрисовки
-# # 'b-'/'r-' - синяя/красная линия
-# # label - подпись для легенды
-# # linewidth - толщина линии
-# ax1.plot(epochs_range, val_acc, 'r-', label = 'Validation accuracy', linewidth = 2)
-# ax1.set_title('Model accuracy', fontsize = 14, fontweight = 'bold') # заголовок графика
-# ax1.set_xlabel('Epoch') # подпись оси X
-# ax1.set_ylabel('Accuracy') # подпись оси Y
-# ax1.legend() # показать легенду
-# ax1.grid(True, alpha = 0.3) # отрисовка сетки с 30% прозрачности
-#
-# # отрисовка графика 2
-# ax2.plot(epochs_range, train_loss, 'b-', label = 'Train loss', linewidth = 2)
-# ax2.plot(epochs_range, val_loss, 'r-', label = 'Validation loss', linewidth = 2)
-# ax2.set_title('Model accuracy', fontsize = 14, fontweight = 'bold')
-# ax2.set_xlabel('Epoch')
-# ax2.set_ylabel('Loss')
-# ax2.legend()
-# ax2.grid(True, alpha = 0.3)
-#
-# # plt.tight_layout()
-# # plt.show()
+train_acc = history.history['accuracy']
+val_acc = history.history['val_accuracy']
+train_loss = history.history['loss']
+val_loss = history.history['val_loss']
+
+epochs_range = range(1, len(train_loss) + 1)
+
+# создание графика: 1 строка, 2 колонки, размеры 14x5" (дюймов)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize = (14, 5))
+
+# отрисовка графика 1
+ax1.plot(epochs_range, train_acc, 'b-', label = 'Train accuracy', linewidth = 2)
+# epochs_range - кол-во эпох обучения
+# train_acc/val_acc - данные для отрисовки
+# 'b-'/'r-' - синяя/красная линия
+# label - подпись для легенды
+# linewidth - толщина линии
+ax1.plot(epochs_range, val_acc, 'r-', label = 'Validation accuracy', linewidth = 2)
+ax1.set_title('Model accuracy', fontsize = 14, fontweight = 'bold') # заголовок графика
+ax1.set_xlabel('Epoch') # подпись оси X
+ax1.set_ylabel('Accuracy') # подпись оси Y
+ax1.legend() # показать легенду
+ax1.grid(True, alpha = 0.3) # отрисовка сетки с 30% прозрачности
+
+# отрисовка графика 2
+ax2.plot(epochs_range, train_loss, 'b-', label = 'Train loss', linewidth = 2)
+ax2.plot(epochs_range, val_loss, 'r-', label = 'Validation loss', linewidth = 2)
+ax2.set_title('Model accuracy', fontsize = 14, fontweight = 'bold')
+ax2.set_xlabel('Epoch')
+ax2.set_ylabel('Loss')
+ax2.legend()
+ax2.grid(True, alpha = 0.3)
+
+plt.tight_layout()
+plt.show()
 #
 # # анализ обучения
 # print(f'Top val_accuracy: {max(val_acc):.4f} (Epoch: {np.argmax(val_acc)+1})\n'

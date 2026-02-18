@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2 id="header">Header text</h2>
+        <h2 class="header">Header text</h2>
         <p class="text">Simple text</p>
 
         <ul class="ul">
@@ -18,8 +18,27 @@
         </ul>
 
 
+        <h1 class="event" onclick="clickEvent(p)">Тыкни на меня</h1>
+        <p class="test-text">Подопытный</p>
+
+        <button class="btn-light">Светлая</button>
+        <button class="btn-dark">Темная</button>
+
+        <br>
+        <button class="btn-switcher">Переключить</button>
+
+        <input type="text" class="input">
+        <input type="submit" class="btn-submit">
+
+        <br><br>
+        <button onclick="sub()">-</button>
+        <span class="clicker-text">Clicks: 0</span>
+        <button class="btn-add" onclick="add()">+</button>
+
+
 <!--        <script src="DOM_create_get.js"></script> &lt;!&ndash; Подключение .js файла &ndash;&gt;-->
-        <script src="create_css.js"></script>
+<!--        <script src="create_css.js"></script>-->
+        <script src="events.js"></script>
 
     </body>
 </html>
