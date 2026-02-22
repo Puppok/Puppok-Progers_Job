@@ -55,7 +55,6 @@ for i in range(5):
     arr_frames.append(frame) # добавляем получившийся кадр в массив кадров
 
 current_frame = 0
-
 frame_timer = 0
 frame_duration = 0.2
 
