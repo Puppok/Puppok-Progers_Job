@@ -1,10 +1,13 @@
 import pygame as pg
 
 class AnimatedSpritesheet(pg.sprite.Sprite):
-    def __init__(self, image_path: str, frame_size: tuple, animation_map: dict, default: str = 'idle_down'):
+    def __init__(self, image_path: str,
+                 frame_size: tuple,
+                 animation_map: dict,
+                 default: str = 'idle_down'):
         super().__init__()
 
-        self.spritesheet = pg.image.load(image_path).convert_alpha() # спрайтлист картинка
+        self.spritesheet = pg.image.load(image_path).convert_alpha() # спрайт лист картинка
         self.frame_w, self.frame_h = frame_size # размеры кадра
 
         # нарезка всех анимаций
@@ -19,7 +22,7 @@ class AnimatedSpritesheet(pg.sprite.Sprite):
 
         # состояние анимации
         self.current_animation = default
-        self.frame_index = 0
+        self.frame_index = 0.0
         self.finished = False
 
         # состояние движения
@@ -56,15 +59,78 @@ class AnimatedSpritesheet(pg.sprite.Sprite):
                 self.rect.x += dx * self.move_speed
                 self.rect.y += dy * self.move_speed
                 self.last_direction = direction
+                self.play(f'walk_{direction}')
                 moving = True
                 break
 
             if not moving:
                 self.play(f'idle_{self.last_direction}')
 
-    def play(self, name, restart = False):
-        pass
+    def play(self, name: str, restart = False):
+        """Воспроизведение анимации"""
+        if self.current_animation == name and not restart:
+            # print(self.current_animation, name)
+            return
+
+        if name not in self.animations:
+            return
+
+        self.current_animation = name
+        self.frame_index = 0.0
+        self.finished = False
 
     def update(self):
-        pass
+        """Обновление состояния"""
+        self.handle_input()
 
+        animation = self.animations[self.current_animation]
+        frames = animation['frames']
+
+        if not self.finished:
+            self.frame_index += animation['speed']
+            if self.frame_index >= len(frames):
+                if animation['loop']:
+                    self.frame_index = 0.0
+                else:
+                    self.frame_index = len(frames) - 1
+                    self.finished = True
+        self.image = frames[int(self.frame_index)]
+
+pg.init()
+
+screen = pg.display.set_mode((800, 600))
+pg.display.set_caption("Spritesheet Animation")
+clock = pg.time.Clock()
+
+animation_config = {
+    "walk_down":  {"row": 0, "count": 4, "speed": 0.1},
+    "walk_left":  {"row": 1, "count": 4, "speed": 0.1},
+    "walk_right": {"row": 2, "count": 4, "speed": 0.1},
+    "walk_up":    {"row": 3, "count": 4, "speed": 0.1},
+    "idle_down":  {"row": 0, "count": 1, "speed": 0},
+    "idle_left":  {"row": 1, "count": 1, "speed": 0},
+    "idle_right": {"row": 2, "count": 1, "speed": 0},
+    "idle_up":    {"row": 3, "count": 1, "speed": 0},
+}
+
+player = AnimatedSpritesheet('spritesheet_miner.png', (64, 64), animation_config)
+player.rect.center = (400, 300)
+
+all_sprites = pg.sprite.Group(player)
+
+running = True
+while running:
+    clock.tick(60)
+
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            running = False
+
+    all_sprites.update()
+
+    screen.fill((0, 0, 0))
+    all_sprites.draw(screen)
+
+    pg.display.flip()
+
+pg.quit()
