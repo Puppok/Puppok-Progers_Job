@@ -44,6 +44,8 @@ html, body {
     gap: 10%;
 }
 
+
+
 .upgrades h3,
 .shop h3 {
     width: 80%;
@@ -55,6 +57,16 @@ html, body {
     align-items: center;
     font-size: 36px;
     user-select: none;
+}
+
+.auto_click_info,
+.click_upgrade,
+.auto_click_upgrade {
+    background-color: #d94545;
+}
+
+.click_info {
+    background-color: #f6f635;
 }
 
 .shop h3 {
@@ -96,4 +108,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.active {
+    background-color: #aaf66a;
 }
