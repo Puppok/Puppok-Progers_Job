@@ -63,8 +63,8 @@ class AnimatedSpritesheet(pg.sprite.Sprite):
                 moving = True
                 break
 
-            if not moving:
-                self.play(f'idle_{self.last_direction}')
+        if not moving:
+            self.play(f'idle_{self.last_direction}')
 
     def play(self, name: str, restart = False):
         """Воспроизведение анимации"""
