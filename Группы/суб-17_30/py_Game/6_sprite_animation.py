@@ -75,6 +75,11 @@ spritesheet_frames = get_frames(spritesheet,  # исходная картинк�
                                 spritesheet.get_height() // 2, # высота кадра (высота картинки / кол-во строк кадров)
                                 8) # кол-во кадров в одной строке
 
+spritesheet_current_frame = 0
+spritesheet_anim_speed = 0.2
+spritesheet_anim_timer = 0
+# --------------------------------------
+
 running = True
 while running:
     dt = clock.tick(60) / 1000
@@ -90,11 +95,19 @@ while running:
         current_frame = (current_frame + 1) % len(square_frames) # переключаем кадр анимации
     # ----------------
 
+    # Анимация спрайт листа
+    spritesheet_anim_timer += spritesheet_anim_speed
+    if spritesheet_anim_timer >= 1:
+        spritesheet_anim_timer = 0
+        spritesheet_current_frame = (spritesheet_current_frame + 1) % len(spritesheet_frames)
+    # ----------------
+
     circle_sprites.update(dt)
 
     screen.fill((0, 0, 0))
     screen.blit(square_frames[current_frame], (100, 100))
     circle_sprites.draw(screen)
+    screen.blit(spritesheet_frames[spritesheet_current_frame], (300, 300))
 
     pg.display.flip()
 
