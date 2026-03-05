@@ -28,4 +28,3 @@ class CheckBox:
         text = font.render(self.label, True, (0, 0, 0))
         surface.blit(text, (self.rect.right + 10, self.rect.y + 2))
 
-# TODO: чуваки запишут и дальше слайдер
