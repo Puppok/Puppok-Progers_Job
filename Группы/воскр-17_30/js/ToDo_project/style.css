@@ -136,11 +136,6 @@ html, body {
     margin-bottom: 20px;
 }
 
-.list_element input {
-    height: 20px;
-    width: 20px;
-}
-
 .list_element p {
     width: 58%;
     color: #fff;
@@ -170,12 +165,16 @@ html, body {
     cursor: pointer;
 }
 
-.edit_btn {
-
-}
-
-.delete_btn {
-
+.edit_input {
+    width: 58%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
 }
 
 .footer {

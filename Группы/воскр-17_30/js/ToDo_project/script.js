@@ -15,10 +15,9 @@ function update_counter() {
 add_btn.addEventListener('click', () => {
     if (input.value === '') {
         input.setCustomValidity('Can\'t be empty')
-        input.reportValidity()  // показывает браузерный попап
+        input.reportValidity()
         return
     }
-
     input.setCustomValidity('')
 
     const task_element_html = `<input type="checkbox" class="checkbox">
@@ -43,11 +42,31 @@ add_btn.addEventListener('click', () => {
         task_element.remove()
         update_counter()
     })
+
+    const edit_btn = task_element.querySelector('.edit_btn')
+    edit_btn.addEventListener('click', () => {
+        if (edit_btn.textContent === 'Edit') {
+            const edit_input = document.createElement('input')
+            edit_input.type = 'text'
+            edit_input.value = element_text.textContent
+            edit_input.classList.add('edit_input')
+            element_text.replaceWith(edit_input)
+            edit_btn.textContent = 'Save'
+            edit_input.focus()
+        } else {
+            const new_text = task_element.querySelector('.edit_input').value
+            const new_p = document.createElement('p')
+            new_p.classList.add('element_text')
+            new_p.textContent = new_text
+            if (task_element.querySelector('.checkbox').checked) {
+                new_p.classList.add('completed')
+            }
+            task_element.querySelector('.edit_input').replaceWith(new_p)
+            edit_btn.textContent = 'Edit'
+        }
+    })
 })
 
 input.addEventListener('input', () => {
     input.setCustomValidity('')
 })
-
-
-
