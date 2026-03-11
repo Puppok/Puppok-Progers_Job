@@ -48,6 +48,7 @@ class Slider:
         # линия слайдера
         pg.draw.rect(surface, (150, 150, 150), self.rect, border_radius=8)
 
+        # шкала заполнения
         fill_rect = pg.Rect(self.rect.x, self.rect.y, self.handle_x - self.rect.x, self.rect.height)
         pg.draw.rect(surface, (100, 200, 100), fill_rect, border_radius=8)
 

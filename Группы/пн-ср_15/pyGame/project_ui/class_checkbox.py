@@ -1,6 +1,6 @@
 import pygame as pg
 
-class CheckBox:
+class Checkbox:
     def __init__(self, coord_x, coord_y, size, label):
         self.rect = pg.Rect(coord_x, coord_y, size, size)
         self.label = label

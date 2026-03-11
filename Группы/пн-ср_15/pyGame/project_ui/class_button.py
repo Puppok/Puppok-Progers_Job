@@ -27,6 +27,6 @@ class Button:
         pg.draw.rect(surface, (0, 0, 0), self.rect, 2, border_radius = 5)
 
         font = pg.font.Font(None, 32)
-        text = font.render(self.text, True, self.text_color)
-        text_rect = text.get_rect()
-        surface.blit(text, text_rect)
+        text_render = font.render(self.text, True, self.text_color)
+        text_rect = text_render.get_rect(center = self.rect.center)
+        surface.blit(text_render, text_rect)
