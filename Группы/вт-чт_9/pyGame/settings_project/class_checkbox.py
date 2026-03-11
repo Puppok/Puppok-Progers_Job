@@ -25,6 +25,6 @@ class Checkbox:
             ]
             pg.draw.lines(surface, (0, 200, 0), False, points, 3)
 
-            font = pg.font.Font(None, 28)
-            text = font.render(self.label, True, (0, 0, 0))
-            surface.blit(text, (self.rect.right + 10, self.rect.y + 2))
+        font = pg.font.Font(None, 28)
+        text = font.render(self.label, True, (0, 0, 0))
+        surface.blit(text, (self.rect.right + 10, self.rect.y + 2))
