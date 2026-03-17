@@ -72,3 +72,8 @@ function cave(length) -- length - длина шахты
 
 end
 
+-- Задача 4. Функция, которая строит стену заданной высоты и длины
+function wall(length, height) -- length - длина, height - высота
+
+end
+
