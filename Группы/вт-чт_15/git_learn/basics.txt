@@ -55,7 +55,7 @@ git --version - проверить версию git
       Host github-vasya
           HostName github.com
           User git
-          IdentityFile ~/.ssh/id_vasya
+          IdentityFile C:/Users/NADIP-123/.ssh/id_vasya
 
       # Аккаунт Petya
       Host github-petya
