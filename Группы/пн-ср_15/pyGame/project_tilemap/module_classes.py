@@ -174,7 +174,7 @@ class TileMapEditor:
             4: (255, 0, 0),  # Вода
         }
 
-    def handle_click(self, mouse_x, mouse_y, button): # не записали
+    def handle_click(self, mouse_x, mouse_y, button):
         # Учитываем смещение карты
         adjusted_x = mouse_x - self.offset_x
         adjusted_y = mouse_y - self.offset_y
