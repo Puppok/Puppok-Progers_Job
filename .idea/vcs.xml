@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Группы/воскр-8_30/pyGame/Tilemap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Группы/вт-чт_15/keras/project_mnist" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Группы/суб-17_30/py_Game/ui_project" vcs="Git" />
   </component>
 </project>

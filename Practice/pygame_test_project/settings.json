@@ -1,0 +1,10 @@
+{
+  "music_volume": 0.38333333333333336,
+  "sfx_volume": 0.4,
+  "fullscreen": false,
+  "controls": {
+    "left": "kscan:4",
+    "right": "kscan:7",
+    "jump": "kscan:44"
+  }
+}

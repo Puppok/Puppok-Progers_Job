@@ -3,181 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои любимые животные</title>
+    <title>Мои навыки</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-color: #f0f8ff;
-            color: #333333;
-            font-size: 18px;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
         }
 
-        h1 {
-            color: #2c5aa0;
-            font-size: 36px;
+        /* Flexbox для навигации - justify-content: space-between */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 15px 30px;
         }
 
-        h2 {
-            color: #4a7ba7;
+        .logo {
+            color: white;
             font-size: 24px;
+            font-weight: bold;
         }
 
+        /* Flexbox для меню - gap для отступов */
         .menu {
-            background-color: #2c5aa0;
-            padding: 15px;
-            font-size: 20px;
+            display: flex;
+            gap: 15px;
         }
 
         .menu a {
             color: white;
-            margin-right: 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
         }
 
-        .animal-card {
-            background-color: white;
-            width: 500px;
-            padding: 20px;
-            margin: 20px 0;
+        .menu a:hover {
+            background-color: #34495e;
         }
 
-        .animal-card img {
-            width: 100%;
-            height: 300px;
+        /* Flexbox для центрирования заголовка */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
         }
 
-        .description {
-            font-size: 16px;
-            color: #555555;
-        }
-
-        .read-more {
-            color: #2c5aa0;
-            font-size: 18px;
-        }
-
-        .gallery {
-            margin-top: 20px;
-        }
-
-        .gallery img {
-            margin-right: 10px;
+        .hero h1 {
+            font-size: 36px;
             margin-bottom: 10px;
+        }
+
+        /* Flexbox для карточек в ряд */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .skill-card h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .skill-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Flexbox для футера */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-<h1>🐾 Мои любимые животные</h1>
+<!-- Flexbox навигация: space-between для логотипа и меню -->
+<nav class="navbar">
+    <div class="logo">МойПортфолио</div>
+    <div class="menu">
+        <a href="#">Главная</a>
+        <a href="#">Навыки</a>
+        <a href="#">Проекты</a>
+        <a href="#">Контакты</a>
+    </div>
+</nav>
 
-<!-- Навигационное меню -->
-<div class="menu">
-    <a href="#cats">Кошки</a>
-    <a href="#dogs">Собаки</a>
-    <a href="#birds">Птицы</a>
-    <a href="https://www.google.com/search?q=animals" target="_blank">Поиск животных</a>
+<!-- Flexbox для центрирования: column, center, center -->
+<section class="hero">
+    <h1>Мои навыки</h1>
+    <p>Постоянно учусь и развиваюсь</p>
+</section>
+
+<!-- Flexbox для карточек в ряд с gap -->
+<div class="skills-container">
+    <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Создание структуры веб-страниц. Знание всех основных тегов и семантической разметки.</p>
+    </div>
+
+    <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Стилизация сайтов. Работа с цветом, шрифтами, блочной моделью и Flexbox.</p>
+    </div>
+
+    <div class="skill-card">
+        <h3>Дизайн</h3>
+        <p>Основы веб-дизайна. Понимание композиции, цветовых схем и типографики.</p>
+    </div>
 </div>
 
-<hr>
-
-<!-- Карточка 1: Кошки -->
-<div class="animal-card" id="cats">
-    <h2>🐱 Кошки</h2>
-
-    <!-- Картинка-ссылка -->
-    <a href="https://ru.wikipedia.org/wiki/Кошка" target="_blank">
-        <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_640.jpg"
-             alt="Рыжий котенок">
-    </a>
-
-    <p class="description">
-        Кошки — самые популярные домашние животные. Они независимые, ласковые и очень чистоплотные.
-    </p>
-
-    <p>
-        <a href="https://ru.wikipedia.org/wiki/Кошка" class="read-more" target="_blank">
-            Узнать больше о кошках →
-        </a>
-    </p>
-</div>
-
-<hr>
-
-<!-- Карточка 2: Собаки -->
-<div class="animal-card" id="dogs">
-    <h2>🐕 Собаки</h2>
-
-    <a href="https://ru.wikipedia.org/wiki/Собака" target="_blank">
-        <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_640.jpg"
-             alt="Золотистый ретривер">
-    </a>
-
-    <p class="description">
-        Собаки — верные друзья человека. Они умные, преданные и любят играть!
-    </p>
-
-    <p>
-        <a href="https://ru.wikipedia.org/wiki/Собака" class="read-more" target="_blank">
-            Узнать больше о собаках →
-        </a>
-    </p>
-</div>
-
-<hr>
-
-<!-- Карточка 3: Птицы -->
-<div class="animal-card" id="birds">
-    <h2>🦜 Попугаи</h2>
-
-    <a href="https://ru.wikipedia.org/wiki/Попугаеобразные" target="_blank">
-        <img src="https://irecommend.ru/sites/default/files/product-images/10297/Cku2fFf1Im8yRAcACtjI3g.jpeg"
-             alt="Яркий попугай">
-    </a>
-
-    <p class="description">
-        Попугаи — красочные и умные птицы. Некоторые могут даже говорить!
-    </p>
-
-    <p>
-        <a href="https://ru.wikipedia.org/wiki/Попугаеобразные" class="read-more" target="_blank">
-            Узнать больше о попугаях →
-        </a>
-    </p>
-</div>
-
-<hr>
-
-<!-- Галерея маленьких картинок -->
-<h2>Фотогалерея</h2>
-<p>Нажми на картинку, чтобы увидеть больше!</p>
-
-<div class="gallery">
-    <a href="https://www.google.com/search?q=cats&tbm=isch" target="_blank">
-        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg"
-             alt="Кот"
-             width="150"
-             height="150">
-    </a>
-
-    <a href="https://www.google.com/search?q=dogs&tbm=isch" target="_blank">
-        <img src="https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_640.jpg"
-             alt="Собака"
-             width="150"
-             height="150">
-    </a>
-
-    <a href="https://www.google.com/search?q=birds&tbm=isch" target="_blank">
-        <img src="https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_640.jpg"
-             alt="Птица"
-             width="150"
-             height="150">
-    </a>
-
-    <a href="https://www.google.com/search?q=rabbits&tbm=isch" target="_blank">
-        <img src="https://static.tildacdn.com/tild3362-3563-4266-b962-383938613237/naw2c433ckh99sv015l2.jpeg"
-             alt="Кролик"
-             width="150"
-             height="150">
-    </a>
-</div>
-
+<!-- Flexbox для футера: центрирование -->
+<footer class="footer">
+    <p>© 2025 Моё портфолио. Все права защищены.</p>
+</footer>
 </body>
 </html>

@@ -1,110 +1,95 @@
 import pygame
-import pymunk
-import pymunk.pygame_util
-import math
 
 
-def create_bird(space, x, y):
-    """Создание птицы"""
-    mass = 5
-    radius = 15
-    moment = pymunk.moment_for_circle(mass, 0, radius)
-    body = pymunk.Body(mass, moment)
-    body.position = x, y
+class AnimatedButton:
+    def __init__(self, x, y, text):
+        self.x = x
+        self.y = y
+        self.text = text
 
-    shape = pymunk.Circle(body, radius)
-    shape.friction = 0.5
-    shape.elasticity = 0.3
-    shape.color = (255, 0, 0, 255)
+        self.base_size = 200
+        self.current_size = self.base_size
+        self.growing = True
+        self.pulse_speed = 30
 
-    space.add(body, shape)
-    return body, shape
+        self.hovered = False
+        self.clicking = False
+        self.click_blink_count = 0
+        self.blink_timer = 0
 
+    def update(self, dt, mouse_pos):
+        half_size = self.current_size // 2
+        rect = pygame.Rect(self.x - half_size, self.y - half_size,
+                           self.current_size, self.current_size)
 
-def create_block(space, x, y, width, height):
-    """Создание блока"""
-    mass = 2
-    moment = pymunk.moment_for_box(mass, (width, height))
-    body = pymunk.Body(mass, moment)
-    body.position = x, y
+        self.hovered = rect.collidepoint(mouse_pos)
 
-    shape = pymunk.Poly.create_box(body, (width, height))
-    shape.friction = 0.8
-    shape.elasticity = 0.2
-    shape.color = (139, 69, 19, 255)
+        if self.clicking:
+            self.blink_timer += dt
+            if self.blink_timer >= 0.15:
+                self.blink_timer = 0
+                self.click_blink_count += 1
 
-    space.add(body, shape)
-    return body, shape
+                if self.click_blink_count >= 6:
+                    self.clicking = False
+                    self.click_blink_count = 0
 
+        elif not self.hovered:
+            if self.growing:
+                self.current_size += self.pulse_speed * dt
+                if self.current_size >= self.base_size + 20:
+                    self.growing = False
+            else:
+                self.current_size -= self.pulse_speed * dt
+                if self.current_size <= self.base_size - 20:
+                    self.growing = True
+        else:
+            target = self.base_size + 30
+            if self.current_size < target:
+                self.current_size += self.pulse_speed * 2 * dt
+                if self.current_size > target:
+                    self.current_size = target
 
-def create_pig(space, x, y):
-    """Создание свиньи (цель)"""
-    mass = 3
-    radius = 20
-    moment = pymunk.moment_for_circle(mass, 0, radius)
-    body = pymunk.Body(mass, moment)
-    body.position = x, y
+    def click(self):
+        self.clicking = True
+        self.click_blink_count = 0
+        self.blink_timer = 0
+        print(f"Нажата кнопка: {self.text}")
 
-    shape = pymunk.Circle(body, radius)
-    shape.friction = 0.5
-    shape.elasticity = 0.3
-    shape.color = (0, 255, 0, 255)
+    def draw(self, screen):
+        if self.clicking and self.click_blink_count % 2 == 1:
+            return
 
-    space.add(body, shape)
-    return body, shape
+        half_size = int(self.current_size) // 2
+
+        if self.clicking:
+            color = (255, 255, 0)
+        elif self.hovered:
+            color = (100, 255, 100)
+        else:
+            color = (100, 150, 255)
+
+        pygame.draw.rect(screen, color,
+                         (self.x - half_size, self.y - half_size,
+                          int(self.current_size), int(self.current_size)),
+                         border_radius=15)
+
+        pygame.draw.rect(screen, (0, 0, 0),
+                         (self.x - half_size, self.y - half_size,
+                          int(self.current_size), int(self.current_size)),
+                         3, border_radius=15)
 
 
 pygame.init()
-screen = pygame.display.set_mode((1000, 600))
-pygame.display.set_caption("Angry Birds Physics")
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption("Анимированное меню")
 clock = pygame.time.Clock()
 
-# Физический мир
-space = pymunk.Space()
-space.gravity = (0, 900)
-
-# Земля
-ground = pymunk.Segment(space.static_body, (0, 580), (1000, 580), 5)
-ground.friction = 0.9
-space.add(ground)
-
-# Стены
-left_wall = pymunk.Segment(space.static_body, (0, 0), (0, 600), 5)
-right_wall = pymunk.Segment(space.static_body, (1000, 0), (1000, 600), 5)
-space.add(left_wall, right_wall)
-
-# Построение башни
-tower_x = 700
-blocks = []
-
-# Основание
-for i in range(3):
-    body, shape = create_block(space, tower_x + i * 60, 530, 50, 100)
-    blocks.append((body, shape))
-
-# Второй уровень
-for i in range(2):
-    body, shape = create_block(space, tower_x + 30 + i * 60, 420, 50, 100)
-    blocks.append((body, shape))
-
-# Верх
-body, shape = create_block(space, tower_x + 60, 310, 50, 100)
-blocks.append((body, shape))
-
-# Свинья на вершине
-pig_body, pig_shape = create_pig(space, tower_x + 60, 250)
-
-# Рогатка
-slingshot_pos = (150, 500)
-slingshot_power = 0
-dragging = False
-bird_body = None
-bird_shape = None
-
-draw_options = pymunk.pygame_util.DrawOptions(screen)
-
-score = 0
-game_started = False
+buttons = [
+    AnimatedButton(400, 150, "Играть"),
+    AnimatedButton(400, 300, "Настройки"),
+    AnimatedButton(400, 450, "Выход")
+]
 
 running = True
 while running:
@@ -117,89 +102,17 @@ while running:
             running = False
 
         if event.type == pygame.MOUSEBUTTONDOWN:
-            if event.button == 1:
-                # Проверка клика на рогатку
-                dx = mouse_pos[0] - slingshot_pos[0]
-                dy = mouse_pos[1] - slingshot_pos[1]
-                if math.sqrt(dx ** 2 + dy ** 2) < 50 and not game_started:
-                    dragging = True
-                    bird_body, bird_shape = create_bird(space, slingshot_pos[0], slingshot_pos[1])
+            for button in buttons:
+                if button.hovered:
+                    button.click()
 
-        if event.type == pygame.MOUSEBUTTONUP:
-            if event.button == 1 and dragging:
-                # Запуск птицы
-                dx = slingshot_pos[0] - bird_body.position.x
-                dy = slingshot_pos[1] - bird_body.position.y
-                force = (dx * 50, dy * 50)
-                bird_body.apply_impulse_at_local_point(force)
+    for button in buttons:
+        button.update(dt, mouse_pos)
 
-                dragging = False
-                game_started = True
+    screen.fill((50, 50, 80))
 
-    # Перетаскивание птицы
-    if dragging and bird_body:
-        # Ограничение расстояния
-        dx = mouse_pos[0] - slingshot_pos[0]
-        dy = mouse_pos[1] - slingshot_pos[1]
-        distance = math.sqrt(dx ** 2 + dy ** 2)
-        max_distance = 100
-
-        if distance > max_distance:
-            dx = dx / distance * max_distance
-            dy = dy / distance * max_distance
-
-        bird_body.position = slingshot_pos[0] + dx, slingshot_pos[1] + dy
-        bird_body.velocity = 0, 0
-
-    # Обновление физики
-    space.step(dt)
-
-    # Проверка упавших блоков
-    for body, shape in blocks[:]:
-        if body.position.y > 700:
-            space.remove(body, shape)
-            blocks.remove((body, shape))
-            score += 10
-
-    # Проверка свиньи
-    if pig_body.position.y > 700:
-        score += 100
-        print("Свинья уничтожена!")
-        # Можно создать новую свинью или завершить уровень
-
-    # Отрисовка
-    screen.fill((135, 206, 235))
-
-    # Рогатка
-    pygame.draw.circle(screen, (139, 69, 19), slingshot_pos, 10)
-    pygame.draw.line(screen, (80, 40, 10),
-                     (slingshot_pos[0] - 20, slingshot_pos[1] - 30),
-                     (slingshot_pos[0] - 20, slingshot_pos[1]), 8)
-    pygame.draw.line(screen, (80, 40, 10),
-                     (slingshot_pos[0] + 20, slingshot_pos[1] - 30),
-                     (slingshot_pos[0] + 20, slingshot_pos[1]), 8)
-
-    # Линии натяжения
-    if dragging and bird_body:
-        pygame.draw.line(screen, (100, 50, 20),
-                         (slingshot_pos[0] - 20, slingshot_pos[1] - 30),
-                         bird_body.position, 3)
-        pygame.draw.line(screen, (100, 50, 20),
-                         (slingshot_pos[0] + 20, slingshot_pos[1] - 30),
-                         bird_body.position, 3)
-
-    # Физические объекты
-    space.debug_draw(draw_options)
-
-    # UI
-    font = pygame.font.Font(None, 42)
-    score_text = font.render(f"Счёт: {score}", True, (0, 0, 0))
-    screen.blit(score_text, (10, 10))
-
-    if not game_started:
-        hint = pygame.font.Font(None, 28).render(
-            "Перетащите и отпустите для запуска", True, (0, 0, 0))
-        screen.blit(hint, (300, 50))
+    for button in buttons:
+        button.draw(screen)
 
     pygame.display.flip()
 
