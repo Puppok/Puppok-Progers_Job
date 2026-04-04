@@ -7,7 +7,7 @@ pg.display.set_caption("Tilemap Editor")
 clock = pg.time.Clock()
 
 # Создание редактора
-editor = TilemapEditor(width = 20, height = 15, tile_size = 32)
+editor = TilemapEditor(width = 100, height = 30, tile_size = 32)
 
 # Попытка загрузить сохраненную карту
 editor.load_from_file("tilemap.json")
@@ -63,7 +63,7 @@ while running:
     pg.draw.rect(screen, (20, 20, 30), (0, 0, 150, 600))
 
     # Карта
-    map_surface = pg.Surface((640, 480))
+    map_surface = pg.Surface((1920, 800))
     editor.draw_map(map_surface)
     screen.blit(map_surface, (editor.offset_x, editor.offset_y))
 
