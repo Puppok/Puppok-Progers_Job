@@ -61,21 +61,92 @@ int digitCount(int num) {             // вычисление суммы циф�
     return count;
 }
 
-int power(int base, int exp) {       // вычисление степени числа
-    int result = 1;                  // переменная результата вычисления степени
+// int power(int base, int exp) {       // вычисление степени числа
+//     int result = 1;                  // переменная результата вычисления степени
+//
+//     for (int i = 1; i <= exp; i++) { // перебираем числа от 1 до показателя степени
+//         result *= base;              // к результату домножаем исходное число
+//     }
+//
+//     return result;
+// }
 
-    for (int i = 1; i <= exp; i++) { // перебираем числа от 1 до показателя степени
-        result *= base;              // к результату домножаем исходное число
-    }
+// int digitSumPower(int num) {                       // вычисление итогового результата
+//     int sumDigits = digitSum(num);                 // находим сумму цифр
+//     int countDigits = digitCount(num);             // находим кол-во цифр
+//
+//     return power(sumDigits, countDigits); // вычисляем сумму цифр в степени кол-ва цифр
+// }
 
-    return result;
+// === Задачи ===
+// 1. Приветствие
+// Напиши функцию greet(name), которая принимает имя и выводит "Привет, [имя]!".
+// Вызови её для трёх разных имён.
+
+// 2. Максимум из двух чисел
+// Напиши функцию maxOfTwo(a, b), которая принимает два числа и возвращает наибольшее.
+
+// 3. Проверка на чётность
+// Напиши функцию isEven(n), которая возвращает true, если число чётное.
+// Выведи результат для чисел от 1 до 10.
+
+// 4. Периметр и площадь прямоугольника (вместе)
+// Напиши две функции: perimeter(a, b) и area(a, b).
+// Обе принимают стороны прямоугольника и возвращают соответствующее значение
+void perimeter(int a, int b) {
+    cout << "Периметр сторон " << a << " и " << b << " = " << (a + b) * 2 << '\n';
 }
 
-int digitSumPower(int num) {                       // вычисление итогового результата
-    int sumDigits = digitSum(num);                 // находим сумму цифр
-    int countDigits = digitCount(num);             // находим кол-во цифр
+void area(int a, int b) {
+    cout << "Площадь сторон " << a << " и " << b << " = " << a * b << '\n';
+}
 
-    return power(sumDigits, countDigits); // вычисляем сумму цифр в степени кол-ва цифр
+// 5. Конвертер минут (вместе)
+// Напиши функцию toHoursAndMinutes(minutes),
+// которая принимает количество минут и выводит результат в формате "Х ч. Y мин.".
+// Пример: 130 → "2 ч. 10 мин."
+void toHoursAndMinutes(int minutes) {
+    int hours = minutes / 60;
+    int mins = minutes % 60;
+    cout << minutes << " -> " << hours << " ч. " << mins << " мин." << '\n';
+}
+
+// 6. Абсолютное значение (вместе)
+// Напиши функцию myAbs(n), которая возвращает модуль числа
+void myAbs(int num) {
+    if (num < 0) {
+        num = -num;
+    }
+    cout << num << '\n';
+}
+
+// 7. Степень числа (вместе)
+// Напиши функцию power(base, exp), которая возвращает base в степени exp
+void power(int base, int exp) {
+    int result = 1;
+    for (int i = 1; i <= exp; i++) {
+         result = result * base;
+    }
+
+    cout << "Результат: " << result << '\n';
+}
+
+// 8. Сумма от 1 до N
+// Напиши функцию sumTo(n), которая возвращает сумму всех чисел от 1 до n.
+
+// 9. Максимум из трёх чисел (вместе)
+// Напиши функцию maxOfThree(a, b, c)
+// Найди максимум из трёх введённых пользователем чисел
+void maxOfThree(int a, int b, int c) {
+    if (a > b && a > c) {
+        cout << a << " наибольшее\n";
+    }
+    else if (b > a && b > c) {
+        cout << b << " наибольшее\n";
+    }
+    else {
+        cout << c << " наибольшее\n";
+    }
 }
 
 
@@ -99,8 +170,31 @@ int main() {
     sum(x, y); // использование новых переменных в новых реализациях
     showEven(y);
 
+    // cout << digitSumPower(547) << '\n';
 
-    cout << digitSumPower(547) << '\n';
+    // Задачи
+    // Задача 4
+    perimeter(12, 8);
+    perimeter(56, 4);
+
+    area(12, 8);
+    area(56, 4);
+
+    // Задача 5
+    toHoursAndMinutes(130);
+    toHoursAndMinutes(5876);
+
+    // Задача 6
+    myAbs(-12);
+    myAbs(45);
+
+    // Задача 7
+    power(3, 4);
+
+    // Задача 9
+    maxOfThree(12, 4, 8);
+    maxOfThree(23, 56, 5);
+    maxOfThree(9, 83, 458);
 
     return 0;
 }
